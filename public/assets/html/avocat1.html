@@ -1,0 +1,2716 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فولان بن فولان | محامية متربصة بأريانة</title>
+    <meta name="description" content="الموقع المهني للمحامية فولان بن فولان، محامية متربصة بأريانة، تونس. استشارات قانونية، متابعة القضايا، صياغة العقود وحجز المواعيد.">
+    <meta name="keywords" content="محامية, أريانة, تونس, استشارات قانونية, فولان بن فولان, محامية متربصة, صياغة عقود">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #1e293b;
+            --primary-dark: #0f172a;
+            --accent: #d4af37;
+            --accent-light: #fef08a;
+            --accent-hover: #b45309;
+            --bg-ivory: #fcfbf9;
+            --bg-white: #ffffff;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.02);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+            background-color: var(--bg-ivory);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        html[lang="ar"] {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        html[lang="fr"], html[lang="en"] {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Amiri', 'Playfair Display', serif;
+            color: var(--primary-dark);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button, input, select, textarea {
+            font-family: inherit;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-dark);
+            color: #fff;
+            border-color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: var(--primary-dark);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-dark);
+            color: #fff;
+        }
+
+        .btn-gold {
+            background-color: var(--accent);
+            color: var(--primary-dark);
+        }
+
+        .btn-gold:hover {
+            background-color: #c5a028;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 90px;
+        }
+
+        .logo-area {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .logo-subtitle {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Language Selector */
+        .lang-dropdown {
+            position: relative;
+        }
+
+        .lang-btn {
+            background: var(--bg-ivory);
+            border: 1px solid var(--border-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .lang-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: var(--shadow-md);
+            display: none;
+            flex-direction: column;
+            min-width: 130px;
+            z-index: 1010;
+        }
+
+        .lang-menu.active {
+            display: flex;
+        }
+
+        .lang-option {
+            padding: 0.6rem 1rem;
+            text-align: start;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .lang-option:hover {
+            background-color: var(--bg-ivory);
+            color: var(--accent);
+        }
+
+        .lang-option.selected {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-dark);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #090d16 100%);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="%23d4af37" fill-opacity="0.03" fill-rule="evenodd"><path d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></svg>');
+            opacity: 0.5;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            color: #fff;
+        }
+
+        .hero-content h1 span {
+            color: var(--accent);
+            display: block;
+            font-size: 1.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .hero-content p {
+            font-size: 1.15rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .hero-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .hero-info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hero-info-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .hero-info-item div span {
+            display: block;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .hero-info-item div strong {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-card-stack {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 450px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-card-stack h3 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.75rem;
+        }
+
+        .trust-indicators {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #e2e8f0;
+        }
+
+        .trust-badge i {
+            color: var(--accent);
+        }
+
+        /* SECTIONS GENERAL */
+        section {
+            padding: 6rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* LAWYER PROFILE */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .profile-card {
+            background: var(--bg-white);
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--accent);
+            border-radius: 0 12px 12px 0;
+        }
+
+        html[dir="ltr"] .profile-card::before {
+            right: auto;
+            left: 0;
+            border-radius: 12px 0 0 12px;
+        }
+
+        .profile-details-list {
+            margin: 1.5rem 0;
+        }
+
+        .profile-detail-row {
+            display: flex;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .profile-detail-row span:first-child {
+            font-weight: 700;
+            width: 150px;
+            color: var(--primary-dark);
+        }
+
+        .profile-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        html[dir="rtl"] .profile-timeline {
+            padding-left: 0;
+            padding-right: 2rem;
+        }
+
+        .profile-timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: var(--accent);
+        }
+
+        html[dir="rtl"] .profile-timeline::before {
+            left: auto;
+            right: 7px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: var(--bg-white);
+            border: 3px solid var(--accent);
+        }
+
+        html[dir="rtl"] .timeline-item::before {
+            left: auto;
+            right: -2rem;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-item span {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* EXPERTISE */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .expertise-card {
+            background: var(--bg-white);
+            border-radius: 8px;
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--accent);
+        }
+
+        .expertise-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .expertise-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .expertise-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .expertise-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+        }
+
+        .expertise-count {
+            color: var(--text-muted);
+        }
+
+        .expertise-link {
+            color: var(--primary-dark);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .expertise-link:hover {
+            color: var(--accent);
+        }
+
+        /* SERVICES */
+        .services-section {
+            background-color: #f1f5f9;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            border-radius: 8px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .service-meta {
+            margin: 1rem 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .service-meta i {
+            color: var(--accent);
+            width: 20px;
+        }
+
+        /* BOOKING MODULE */
+        .booking-section {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #111827 100%);
+            color: #fff;
+            border-radius: 12px;
+            padding: 4rem 3rem;
+            margin: 4rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .booking-steps-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .booking-steps-indicator::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .step-dot {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+            transition: var(--transition);
+        }
+
+        .step-dot.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--primary-dark);
+        }
+
+        .step-dot.completed {
+            background: #10b981;
+            border-color: #10b981;
+            color: #fff;
+        }
+
+        .booking-step-content {
+            display: none;
+        }
+
+        .booking-step-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group.full {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #cbd5e1;
+        }
+
+        .form-control {
+            padding: 0.85rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .form-control option {
+            background: var(--primary-dark);
+            color: #fff;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .option-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .option-card:hover, .option-card.selected {
+            border-color: var(--accent);
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        .option-card i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .option-card h4 {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        .booking-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* CLIENT PORTAL & ADMIN MODALS */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-container {
+            background: var(--bg-white);
+            border-radius: 12px;
+            width: 100%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            animation: modalSlide 0.3s ease;
+        }
+
+        @keyframes modalSlide {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            padding: 1.5rem 2rem;
+            background: var(--primary-dark);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-header h3 {
+            color: #fff;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        /* PORTAL & DASHBOARD UI */
+        .dashboard-layout {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            min-height: 80vh;
+        }
+
+        .dashboard-sidebar {
+            background: var(--primary-dark);
+            color: #fff;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .dashboard-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.85rem 1rem;
+            border-radius: 6px;
+            color: #cbd5e1;
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .dashboard-nav-item:hover, .dashboard-nav-item.active {
+            background: var(--accent);
+            color: var(--primary-dark);
+        }
+
+        .dashboard-content {
+            padding: 2rem;
+            background: var(--bg-ivory);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--bg-white);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .stat-card span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card h3 {
+            font-size: 2rem;
+            color: var(--primary-dark);
+        }
+
+        /* TABLES */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .data-table th, .data-table td {
+            padding: 1rem 1.5rem;
+            text-align: start;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        .data-table th {
+            background: #f8fafc;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .badge-success { background: #dcfce7; color: #166534; }
+        .badge-warning { background: #fef9c3; color: #854d0e; }
+        .badge-danger { background: #fee2e2; color: #991b1b; }
+        .badge-info { background: #e0f2fe; color: #0369a1; }
+
+        /* BLOG & FAQ */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: var(--bg-white);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-content {
+            padding: 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.25rem 1.5rem;
+            color: var(--text-muted);
+            display: none;
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--primary-dark);
+            color: #cbd5e1;
+            padding: 5rem 0 2rem 0;
+            border-top: 3px solid var(--accent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        html[dir="rtl"] .footer-col h4::after {
+            left: auto;
+            right: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* FLOATING PORTAL BUTTON */
+        .portal-float-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: var(--accent);
+            color: var(--primary-dark);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            cursor: pointer;
+            z-index: 999;
+            transition: var(--transition);
+            border: 2px solid #fff;
+        }
+
+        html[dir="ltr"] .portal-float-btn {
+            left: auto;
+            right: 30px;
+        }
+
+        .portal-float-btn:hover {
+            transform: scale(1.1);
+            background: var(--primary-dark);
+            color: var(--accent);
+        }
+
+        /* TOAST NOTIFICATION */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-dark);
+            color: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            box-shadow: var(--shadow-lg);
+            border-right: 4px solid var(--accent);
+            z-index: 3000;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        html[dir="rtl"] .toast {
+            right: auto;
+            left: 30px;
+            border-right: none;
+            border-left: 4px solid var(--accent);
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* RESPONSIVE STYLES */
+        @media (max-width: 1024px) {
+            .hero-grid, .profile-grid {
+                grid-template-columns: 1fr;
+            }
+            .main-nav {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-group.full {
+                grid-column: span 1;
+            }
+            .dashboard-layout {
+                grid-template-columns: 1fr;
+            }
+            .hero-content h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-area">
+                <span class="logo-title" data-i18n="logo_name">فولانة بن فولان</span>
+                <span class="logo-subtitle" data-i18n="lawyer_status">محامية متربصة</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="#about" data-i18n="nav_about">عن المحامية</a></li>
+                    <li><a href="#expertise" data-i18n="nav_expertise">الاختصاصات</a></li>
+                    <li><a href="#services" data-i18n="nav_services">الخدمات القانونية</a></li>
+                    <li><a href="#articles" data-i18n="nav_articles">المقالات القانونية</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">الأسئلة الشائعة</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Language Selector -->
+                <div class="lang-dropdown">
+                    <button class="lang-btn" id="langToggle">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="currentLangLabel">العربية</span>
+                        <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </button>
+                    <div class="lang-menu" id="langMenu">
+                        <button class="lang-option selected" onclick="switchLanguage('ar')">✓ العربية</button>
+                        <button class="lang-option" onclick="switchLanguage('fr')">Français</button>
+                        <button class="lang-option" onclick="switchLanguage('en')">English</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="openBookingModal()" data-i18n="consultation">احجز استشارة</button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">
+                    الاستشارة القانونية تبدأ بفهم قضيتك
+                    <span data-i18n="hero_subtitle_span">مكتب المحامية فولانة بن فولان - أريانة، تونس</span>
+                </h1>
+                <p data-i18n="hero_desc">نقدم خدمات قانونية متكاملة للأفراد والشركات مع الالتزام التام بالسرية، الاحترافية، وتقديم الحلول القانونية الناجعة.</p>
+                
+                <div class="hero-info-grid">
+                    <div class="hero-info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span data-i18n="phone">الهاتف</span>
+                            <strong>00 000 000</strong>
+                        </div>
+                    </div>
+                    <div class="hero-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span data-i18n="address_title">الموقع</span>
+                            <strong data-i18n="address_val">أريانة سنتر </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-btns">
+                    <a href="#booking" class="btn btn-gold" data-i18n="hero_btn_book">احجز موعداً</a>
+                    <a href="#contact" class="btn btn-outline" style="color: #fff; border-color: #fff;" data-i18n="hero_btn_req">اطلب استشارة</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card-stack">
+                    <h3 data-i18n="hero_card_title"><i class="fa-solid fa-scale-balanced"></i> ضماناتنا المهنية</h3>
+                    <div class="trust-indicators">
+                        <div class="trust-badge"><i class="fa-solid fa-check-circle"></i> <span data-i18n="trust_1">سرية المعلومات</span></div>
+                        <div class="trust-badge"><i class="fa-solid fa-check-circle"></i> <span data-i18n="trust_2">استشارة شخصية</span></div>
+                        <div class="trust-badge"><i class="fa-solid fa-check-circle"></i> <span data-i18n="trust_3">متابعة قانونية دقيقة</span></div>
+                        <div class="trust-badge"><i class="fa-solid fa-check-circle"></i> <span data-i18n="trust_4">مواعيد مرنة</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAWYER PROFILE SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="about_heading">عن المحامية</h2>
+                <p data-i18n="about_subheading">الكفاءة المهنية، الالتزام بالأخلاقيات، والحرص الدائم على حماية مصالح الموكلين.</p>
+            </div>
+
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <h3 data-i18n="lawyer_name">فولانة بن فولان</h3>
+                    <span style="color: var(--accent); font-weight: 700;" data-i18n="lawyer_status">محامية متربصة</span>
+                    <p style="margin-top: 1rem; color: var(--text-muted);" data-i18n="profile_bio">تتمتع بخبرة واسعة في متابعة النزاعات المدنية والتجارية، وصياغة العقود، وتقديم الاستشارات القانونية الدقيقة للأفراد والشركات في ولاية أريانة وكافة تراب الجمهورية.</p>
+
+                    <div class="profile-details-list">
+                        <div class="profile-detail-row">
+                            <span data-i18n="governorate">الولاية</span>
+                            <span>أريانة، تونس</span>
+                        </div>
+                        <div class="profile-detail-row">
+                            <span data-i18n="address">العنوان</span>
+                            <span data-i18n="full_address">أريانة سنتر</span>
+                        </div>
+                        <div class="profile-detail-row">
+                            <span>الهاتف 1</span>
+                            <span>00 000 000</span>
+                        </div>
+                        <div class="profile-detail-row">
+                            <span>الهاتف 2</span>
+                            <span>00 000 000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-timeline">
+                    <div class="timeline-item">
+                        <span data-i18n="timeline_1_date">المسار الأكاديمي</span>
+                        <h4 data-i18n="timeline_1_title">إجازة في الحقوق والعلوم القانونية</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="timeline_1_desc">التخرج بتفوق مع التركيز على القانون الخاص وقانون الأعمال.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span data-i18n="timeline_2_date">التدريب المهني</span>
+                        <h4 data-i18n="timeline_2_title">معهد المهنة المحاماة</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="timeline_2_desc">تلقي تكوين ميداني مكثف في إجراءات التقاضي والمرافعات.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span data-i18n="timeline_3_date">الممارسة القانونية الحالية</span>
+                        <h4 data-i18n="timeline_3_title">مكتب أريانة سنتر</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="timeline_3_desc">مباشرة القضايا المدنية، التجارية، والعقارية وتقديم الاستشارات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE SECTION -->
+    <section id="expertise" style="background: #f8fafc;">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="expertise_heading">مجالات الاختصاص</h2>
+                <p data-i18n="expertise_subheading">تغطية قانونية شاملة لمختلف فروع القانون لتلبية احتياجاتكم بدقة واحترافية.</p>
+            </div>
+
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div>
+                        <div class="expertise-icon"><i class="fa-solid fa-gavel"></i></div>
+                        <h3 data-i18n="exp_civil">القانون المدني</h3>
+                        <p data-i18n="exp_civil_desc">النزاعات العقارية، التعويضات، المسؤولية المدنية، والعقود.</p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-count" data-i18n="services_count">8 خدمات</span>
+                        <span class="expertise-link" onclick="openModal('civil')" data-i18n="explore_more">اكتشف المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div>
+                        <div class="expertise-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <h3 data-i18n="exp_commercial">القانون التجاري والشركات</h3>
+                        <p data-i18n="exp_commercial_desc">تأسيس الشركات، نزاعات الشركاء، وتحصيل الديون التجارية.</p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-count" data-i18n="services_count">6 خدمات</span>
+                        <span class="expertise-link" onclick="openModal('commercial')" data-i18n="explore_more">اكتشف المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div>
+                        <div class="expertise-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                        <h3 data-i18n="exp_realestate">القانون العقاري</h3>
+                        <p data-i18n="exp_realestate_desc">عقود البيع والشراء، النزاعات العقارية، والتسجيل العقاري.</p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-count" data-i18n="services_count">5 خدمات</span>
+                        <span class="expertise-link" onclick="openModal('realestate')" data-i18n="explore_more">اكتشف المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div>
+                        <div class="expertise-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3 data-i18n="exp_family">قانون الأسرة والأحوال الشخصية</h3>
+                        <p data-i18n="exp_family_desc">قضايا الطلاق، النفقة، الحضانة، والتركات.</p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-count" data-i18n="services_count">7 خدمات</span>
+                        <span class="expertise-link" onclick="openModal('family')" data-i18n="explore_more">اكتشف المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div>
+                        <div class="expertise-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h3 data-i18n="exp_labor">قانون الشغل</h3>
+                        <p data-i18n="exp_labor_desc">نزاعات الشغل، الفصل التعسفي، ومستحقات العمال.</p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-count" data-i18n="services_count">5 خدمات</span>
+                        <span class="expertise-link" onclick="openModal('labor')" data-i18n="explore_more">اكتشف المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div>
+                        <div class="expertise-icon"><i class="fa-solid fa-file-contract"></i></div>
+                        <h3 data-i18n="exp_contracts">صياغة العقود والاستشارات</h3>
+                        <p data-i18n="exp_contracts_desc">صياغة ومراجعة العقود التجارية والمدنية وتقديم الاستشارات المسبقة.</p>
+                    </div>
+                    <div class="expertise-footer">
+                        <span class="expertise-count" data-i18n="services_count">4 خدمات</span>
+                        <span class="expertise-link" onclick="openModal('contracts')" data-i18n="explore_more">اكتشف المزيد <i class="fa-solid fa-arrow-left"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="services_heading">الخدمات القانونية</h2>
+                <p data-i18n="services_subheading">خدمات مخصصة تضمن تمثيلاً قانونياً قوياً وحلولاً عملية فعالة.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <h3 data-i18n="serv_1_title">الاستشارات القانونية المباشرة</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="serv_1_desc">جلسات استشارية معمقة لتحليل وضعيتك القانونية وتحديد أفضل السبل المتاحة.</p>
+                        <div class="service-meta">
+                            <span><i class="fa-solid fa-clock"></i> <strong data-i18n="serv_duration">المدة:</strong> 45 دقيقة</span>
+                            <span><i class="fa-solid fa-file-lines"></i> <strong data-i18n="serv_docs">المطلوب:</strong> الوثائق الشخصية أو المتعلقة بالقضية</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 1rem;" onclick="openBookingModal()" data-i18n="book_service">احجز هذه الخدمة</button>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <h3 data-i18n="serv_2_title">صياغة ومراجعة العقود</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="serv_2_desc">حماية حقوقك التعاقدية من خلال صياغة دقيقة ومحكمة تتوافق مع التشريع التونسي.</p>
+                        <div class="service-meta">
+                            <span><i class="fa-solid fa-clock"></i> <strong data-i18n="serv_duration">المدة:</strong> حسب حجم العقد</span>
+                            <span><i class="fa-solid fa-file-lines"></i> <strong data-i18n="serv_docs">المطلوب:</strong> الشروط والمقترحات الأولية</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 1rem;" onclick="openBookingModal()" data-i18n="book_service">احجز هذه الخدمة</button>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <h3 data-i18n="serv_3_title">التمثيل القانوني والمرافعات</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="serv_3_desc">الدفاع عن مصالحك أمام كافة المحاكم التونسية بمختلف درجاتها باحترافية تامة.</p>
+                        <div class="service-meta">
+                            <span><i class="fa-solid fa-clock"></i> <strong data-i18n="serv_duration">المدة:</strong> طيلة مراحل التقاضي</span>
+                            <span><i class="fa-solid fa-file-lines"></i> <strong data-i18n="serv_docs">المطلوب:</strong> توكيل قانوني ومؤيدات القضية</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 1rem;" onclick="openBookingModal()" data-i18n="book_service">احجز هذه الخدمة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING MODULE -->
+    <section id="booking" class="container">
+        <div class="booking-section">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <h2 style="color: #fff;" data-i18n="booking_heading">حجز استشارة قانونية</h2>
+                <p style="color: #cbd5e1;" data-i18n="booking_subheading">اختر نوع الاستشارة والوقت المناسب لتأكيد موعدك بكل سهولة.</p>
+            </div>
+
+            <div class="booking-steps-indicator">
+                <div class="step-dot active" id="dot-1">1</div>
+                <div class="step-dot" id="dot-2">2</div>
+                <div class="step-dot" id="dot-3">3</div>
+                <div class="step-dot" id="dot-4">4</div>
+            </div>
+
+            <form id="consultationBookingForm" onsubmit="handleBookingSubmit(event)">
+                <!-- STEP 1: Type -->
+                <div class="booking-step-content active" id="booking-step-1">
+                    <h3 style="color: #fff; margin-bottom: 1.5rem;" data-i18n="step_1_title">اختر نوع الاستشارة</h3>
+                    <div class="options-grid">
+                        <div class="option-card selected" onclick="selectOption(this, 'consultation_type', 'استشارة مدنية')">
+                            <i class="fa-solid fa-gavel"></i>
+                            <h4 data-i18n="opt_civil">استشارة مدنية</h4>
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'consultation_type', 'استشارة تجارية')">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <h4 data-i18n="opt_commercial">استشارة تجارية</h4>
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'consultation_type', 'استشارة عقارية')">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <h4 data-i18n="opt_realestate">استشارة عقارية</h4>
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'consultation_type', 'استشارة أسرية')">
+                            <i class="fa-solid fa-users"></i>
+                            <h4 data-i18n="opt_family">استشارة أسرية</h4>
+                        </div>
+                    </div>
+                    <div class="booking-actions">
+                        <div></div>
+                        <button type="button" class="btn btn-gold" onclick="nextBookingStep(2)" data-i18n="next">التالي <i class="fa-solid fa-arrow-left"></i></button>
+                    </div>
+                </div>
+
+                <!-- STEP 2: Method -->
+                <div class="booking-step-content" id="booking-step-2">
+                    <h3 style="color: #fff; margin-bottom: 1.5rem;" data-i18n="step_2_title">طريقة الاستشارة المفضلة</h3>
+                    <div class="options-grid">
+                        <div class="option-card selected" onclick="selectOption(this, 'consultation_method', 'حضورية بالمكتب')">
+                            <i class="fa-solid fa-building"></i>
+                            <h4 data-i18n="method_inperson">حضورية بالمكتب (أريانة سنتر)</h4>
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'consultation_method', 'هاتفية')">
+                            <i class="fa-solid fa-phone"></i>
+                            <h4 data-i18n="method_phone">استشارة هاتفية</h4>
+                        </div>
+                        <div class="option-card" onclick="selectOption(this, 'consultation_method', 'فيديو')">
+                            <i class="fa-solid fa-video"></i>
+                            <h4 data-i18n="method_video">مكالمة فيديو</h4>
+                        </div>
+                    </div>
+                    <div class="booking-actions">
+                        <button type="button" class="btn btn-outline" style="color:#fff; border-color:rgba(255,255,255,0.3);" onclick="prevBookingStep(1)" data-i18n="prev">السابق</button>
+                        <button type="button" class="btn btn-gold" onclick="nextBookingStep(3)" data-i18n="next">التالي <i class="fa-solid fa-arrow-left"></i></button>
+                    </div>
+                </div>
+
+                <!-- STEP 3: Date & Time -->
+                <div class="booking-step-content" id="booking-step-3">
+                    <h3 style="color: #fff; margin-bottom: 1.5rem;" data-i18n="step_3_title">اختيار التاريخ والوقت</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label data-i18n="label_date">التاريخ المطلوب</label>
+                            <input type="date" class="form-control" required id="bookingDate">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="label_time">الوقت المناسب</label>
+                            <select class="form-control" id="bookingTime">
+                                <option>09:00 - 09:45</option>
+                                <option>10:00 - 10:45</option>
+                                <option>11:30 - 12:15</option>
+                                <option>14:00 - 14:45</option>
+                                <option>15:30 - 16:15</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="booking-actions">
+                        <button type="button" class="btn btn-outline" style="color:#fff; border-color:rgba(255,255,255,0.3);" onclick="prevBookingStep(2)" data-i18n="prev">السابق</button>
+                        <button type="button" class="btn btn-gold" onclick="nextBookingStep(4)" data-i18n="next">التالي <i class="fa-solid fa-arrow-left"></i></button>
+                    </div>
+                </div>
+
+                <!-- STEP 4: Client Info -->
+                <div class="booking-step-content" id="booking-step-4">
+                    <h3 style="color: #fff; margin-bottom: 1.5rem;" data-i18n="step_4_title">معلومات العميل</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label data-i18n="label_fullname">الاسم الكامل</label>
+                            <input type="text" class="form-control" required placeholder="محمد بن علي" id="clientName">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="label_phone">رقم الهاتف</label>
+                            <input type="tel" class="form-control" required placeholder="55 123 456" id="clientPhone">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="label_email">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" required placeholder="email@example.com" id="clientEmail">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="label_subject">موضوع الاستشارة أو باختصار القضية</label>
+                            <input type="text" class="form-control" required placeholder="مثال: نزاع حول عقد تعاقد" id="clientSubject">
+                        </div>
+                        <div class="form-group full">
+                            <label data-i18n="label_desc">تفاصيل إضافية أو وصف للمشكلة</label>
+                            <textarea class="form-control" rows="3" placeholder="اكتب تفاصيل موجزة عن قضيتك..."></textarea>
+                        </div>
+                    </div>
+                    <div class="booking-actions">
+                        <button type="button" class="btn btn-outline" style="color:#fff; border-color:rgba(255,255,255,0.3);" onclick="prevBookingStep(3)" data-i18n="prev">السابق</button>
+                        <button type="submit" class="btn btn-gold" data-i18n="submit_booking">تأكيد حجز الاستشارة</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- BLOG / ARTICLES -->
+    <section id="articles" style="background: #f8fafc;">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="articles_heading">المقالات القانونية</h2>
+                <p data-i18n="articles_subheading">آخر المستجدات القانونية والنصائح العملية لتثقيف الموكلين.</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <div>
+                            <span class="badge badge-info" style="margin-bottom: 0.75rem;" data-i18n="art_tag_1">القانون العقاري</span>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;" data-i18n="art_1_title">إجراءات تسجيل العقارات غير المسجلة في القانون التونسي</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="art_1_desc">دليل مبسط حول الخطوات والمستندات الضرورية لتسجيل الأراضي والعقارات لدى ديوان قف الملكية العقارية.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+                            <span style="color: var(--text-muted);">15 جوان 2026</span>
+                            <a href="#" style="color: var(--accent); font-weight: 700;" data-i18n="read_more">قراءة المقال <i class="fa-solid fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <div>
+                            <span class="badge badge-warning" style="margin-bottom: 0.75rem;" data-i18n="art_tag_2">قانون الشركات</span>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;" data-i18n="art_2_title">كيفية حماية شركتك الناشئة عقودياً قانونياً</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="art_2_desc">أهم البنود التي يجب أن تتضمنها عقود الشراكة والتشغيل لتفادي النزاعات المستقبلية بين الشركاء.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+                            <span style="color: var(--text-muted);">28 ماي 2026</span>
+                            <a href="#" style="color: var(--accent); font-weight: 700;" data-i18n="read_more">قراءة المقال <i class="fa-solid fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <div>
+                            <span class="badge badge-success" style="margin-bottom: 0.75rem;" data-i18n="art_tag_3">قانون الشغل</span>
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;" data-i18n="art_3_title">حقوق الأجير في حالة الفصل التعسفي حسب مجلة الشغل</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="art_3_desc">ما هي الخطوات القانونية اللازمة ومقدار التعويضات المستحقة في صورة الإنهاء التعسفي لعقد العمل.</p>
+                        </div>
+                        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+                            <span style="color: var(--text-muted);">10 ماي 2026</span>
+                            <a href="#" style="color: var(--accent); font-weight: 700;" data-i18n="read_more">قراءة المقال <i class="fa-solid fa-arrow-left"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="faq_heading">الأسئلة الشائعة</h2>
+                <p data-i18n="faq_subheading">إجابات على أبرز التساؤلات القانونية والإجرائية المعتادة.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q1">كيف يمكن حجز استشارة قانونية مع المحامية؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a1">يمكنك حجز الاستشارة مباشرة عبر موقعنا الإلكتروني من خلال استمارة حجز المواعيد في الأعلى، أو الاتصال هاتفياً بالرقم 00 000 000 أو زيارة المكتب بأريانة سنتر.</div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q2">ما هي الوثائق المطلوبة لحضور الاستشارة الأولى؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a2">يُرجى إحضار بطاقة الهوية الوطنية وكافة الوثائق والمستندات المتعلقة بنزاعك أو موضوع استشارتك (عقود، رسائل تنبيه، أحكام سابقة إن وجدت) لتقديم استشارة دقيقة.</div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q3">هل يمكن إجراء الاستشارة عن بعد عبر الهاتف أو الفيديو؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a3">نعم، نوفر خدمة الاستشارات عن بعد للموكلين المقيمين خارج ولاية أريانة أو خارج أرض الوطن عبر المكالمات الهاتفية أو تطبيقات الفيديو بعد حجز الموعد مسبقاً.</div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q4">كيف يمكن متابعة مستجدات القضية الخاصة بي؟</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" data-i18n="faq_a4">يمكنك الدخول إلى "بوابة الموكل" الخاصة بك في موقعنا باستخدام رقم هاتفك أو بريدك الإلكتروني للاطلاع على حالة القضايا الجلسات والوثائق المضافة فورياً.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" style="background: #f1f5f9;">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact_heading">اتصل بنا</h2>
+                <p data-i18n="contact_subheading">نسعد بتواصلكم معنا لتقديم الاستشارة والدعم القانوني اللازم.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;" data-i18n="contact_info_title">مكتب المحامية فولانة بن فولان</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <i class="fa-solid fa-location-dot" style="color: var(--accent); font-size: 1.2rem; margin-top: 5px;"></i>
+                            <div>
+                                <strong data-i18n="address">العنوان</strong>
+                                <p style="color: var(--text-muted);" data-i18n="full_address">المركب الإداري والتجاري، مكتب عدد س 420، الطابق الرابع، 2080 أريانة سنتر</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <i class="fa-solid fa-phone" style="color: var(--accent); font-size: 1.2rem;"></i>
+                            <div>
+                                <strong data-i18n="phone">الهاتف</strong>
+                                <p style="color: var(--text-muted);">00 000 000</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <i class="fa-solid fa-envelope" style="color: var(--accent); font-size: 1.2rem;"></i>
+                            <div>
+                                <strong>البريد الإلكتروني</strong>
+                                <p style="color: var(--text-muted);">contact@oumaima-alloui-avocat.tn</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <i class="fa-solid fa-clock" style="color: var(--accent); font-size: 1.2rem;"></i>
+                            <div>
+                                <strong data-i18n="hours_title">أوقات العمل</strong>
+                                <p style="color: var(--text-muted);" data-i18n="hours_val">الإثنين - الجمعة: 08:30 - 17:00 | السبت: 09:00 - 13:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-white); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+                    <h3 style="margin-bottom: 1.5rem;" data-i18n="send_msg">إرسال رسالة سريعة</h3>
+                    <form onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label data-i18n="label_fullname">الاسم الكامل</label>
+                            <input type="text" class="form-control" style="background:#f8fafc; color:var(--text-main); border-color:var(--border-color);" required placeholder="الاسم واللقب">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="label_phone">رقم الهاتف</label>
+                            <input type="tel" class="form-control" style="background:#f8fafc; color:var(--text-main); border-color:var(--border-color);" required placeholder="الهاتف">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="label_desc">الرسالة</label>
+                            <textarea class="form-control" style="background:#f8fafc; color:var(--text-main); border-color:var(--border-color);" rows="4" required placeholder="اكتب استفسارك هنا..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="send_btn">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="logo_name">فولانة بن فولان</h4>
+                    <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 1rem;" data-i18n="lawyer_status">محامية متربصة بأريانة، تونس. تقديم الاستشارات القانونية وتمثيل الموكلين بكل احترافية.</p>
+                    <div style="display: flex; gap: 1rem; font-size: 1.2rem;">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="nav_expertise">الاختصاصات</h4>
+                    <ul class="footer-links">
+                        <li><a href="#expertise" data-i18n="exp_civil">القانون المدني</a></li>
+                        <li><a href="#expertise" data-i18n="exp_commercial">قانون الشركات</a></li>
+                        <li><a href="#expertise" data-i18n="exp_realestate">القانون العقاري</a></li>
+                        <li><a href="#expertise" data-i18n="exp_family">قانون الأسرة</a></li>
+                        <li><a href="#expertise" data-i18n="exp_labor">قانون الشغل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="nav_services">الخدمات القانونية</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services" data-i18n="serv_1_title">الاستشارات القانونية</a></li>
+                        <li><a href="#services" data-i18n="serv_2_title">صياغة العقود</a></li>
+                        <li><a href="#services" data-i18n="serv_3_title">التمثيل القانوني</a></li>
+                        <li><a href="#booking" data-i18n="consultation">حجز موعد</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="contact_heading">معلومات الاتصال</h4>
+                    <ul class="footer-links">
+                        <li><span>أريانة سنتر ، مكتب س 420</span></li>
+                        <li><span>00 000 000</span></li>
+                        <li><span>contact@oumaima-alloui.tn</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 فولانة بن فولان - محامية متربصة. جميع الحقوق محفوظة. (Demo UI Mockup)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING CLIENT PORTAL BUTTON -->
+    <div class="portal-float-btn" onclick="openClientPortalModal()" title="بوابة العميل / Client Portal">
+        <i class="fa-solid fa-user-lock"></i>
+    </div>
+
+    <!-- CLIENT PORTAL MODAL -->
+    <div class="modal-overlay" id="clientPortalModal">
+        <div class="modal-container" style="max-width: 1100px;">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-user-shield"></i> <span data-i18n="portal_title">بوابة العميل - لوحة المتابعة</span></h3>
+                <button class="modal-close" onclick="closeClientPortalModal()">&times;</button>
+            </div>
+            <div class="modal-body" style="padding: 0;">
+                <div class="dashboard-layout">
+                    <div class="dashboard-sidebar">
+                        <div class="dashboard-nav-item active" onclick="switchDashboardTab(this, 'dash-overview')"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="dash_overview">الرئيسية</span></div>
+                        <div class="dashboard-nav-item" onclick="switchDashboardTab(this, 'dash-cases')"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="dash_cases">قضاياي (2)</span></div>
+                        <div class="dashboard-nav-item" onclick="switchDashboardTab(this, 'dash-hearings')"><i class="fa-solid fa-calendar-days"></i> <span data-i18n="dash_hearings">الجلسات القادمة</span></div>
+                        <div class="dashboard-nav-item" onclick="switchDashboardTab(this, 'dash-docs')"><i class="fa-solid fa-file-pdf"></i> <span data-i18n="dash_docs">الوثائق والعقود</span></div>
+                        <div class="dashboard-nav-item" onclick="switchDashboardTab(this, 'dash-messages')"><i class="fa-solid fa-comments"></i> <span data-i18n="dash_messages">الرسائل والمراسلات</span></div>
+                        <div class="dashboard-nav-item" onclick="switchDashboardTab(this, 'dash-invoices')"><i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="dash_invoices">الفواتير والأتعاب</span></div>
+                        <div class="dashboard-nav-item" onclick="closeClientPortalModal()" style="margin-top: auto; color: #ef4444;"><i class="fa-solid fa-right-from-bracket"></i> <span data-i18n="dash_logout">خروج</span></div>
+                    </div>
+
+                    <div class="dashboard-content">
+                        <!-- Tab 1: Overview -->
+                        <div id="dash-overview" class="dash-tab-content">
+                            <h3 style="margin-bottom: 1.5rem;" data-i18n="welcome_client">مرحباً، محمد بن علي</h3>
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <span data-i18n="stat_active_cases">القضايا النشطة</span>
+                                    <h3>2</h3>
+                                </div>
+                                <div class="stat-card">
+                                    <span data-i18n="stat_next_hearing">الجلسة القادمة</span>
+                                    <h3 style="font-size: 1.2rem; margin-top: 0.5rem;">20 أكتوبر 2026</h3>
+                                </div>
+                                <div class="stat-card">
+                                    <span data-i18n="stat_docs">الوثائق المرفقة</span>
+                                    <h3>5</h3>
+                                </div>
+                                <div class="stat-card">
+                                    <span data-i18n="stat_invoices">الفواتير غير المدفوعة</span>
+                                    <h3 style="color: #ef4444;">1</h3>
+                                </div>
+                            </div>
+
+                            <h4 style="margin-bottom: 1rem;" data-i18n="recent_cases_title">آخر القضايا والملفات</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th data-i18n="table_case_num">رقم القضية</th>
+                                        <th data-i18n="table_case_type">نوع القضية</th>
+                                        <th data-i18n="table_court">المحكمة</th>
+                                        <th data-i18n="table_status">الحالة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>#2026-0145</strong></td>
+                                        <td data-i18n="case_type_1">نزاع تجاري وعقود</td>
+                                        <td data-i18n="court_ariana">المحكمة الابتدائية بأريانة</td>
+                                        <td><span class="badge badge-warning" data-i18n="status_hearing">جلسة قادمة</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>#2026-0098</strong></td>
+                                        <td data-i18n="case_type_2">قضية عقارية مدنية</td>
+                                        <td data-i18n="court_tunis">محكمة الاستئناف بتونس</td>
+                                        <td><span class="badge badge-info" data-i18n="status_study">قيد الدراسة</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Tab 2: Cases -->
+                        <div id="dash-cases" class="dash-tab-content" style="display: none;">
+                            <h3 style="margin-bottom: 1.5rem;" data-i18n="dash_cases">قضاياي</h3>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>رقم القضية</th>
+                                        <th>الموضوع</th>
+                                        <th>المحامي المكلف</th>
+                                        <th>التاريخ</th>
+                                        <th>الحالة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#2026-0145</td>
+                                        <td>نزاع عقدي شركة تجارية</td>
+                                        <td>فولانة بن فولان</td>
+                                        <td>12 جانفي 2026</td>
+                                        <td><span class="badge badge-warning">جلسة قادمة</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2026-0098</td>
+                                        <td>إذن بالبيع عقار مشاع</td>
+                                        <td>فولانة بن فولان</td>
+                                        <td>04 فيفري 2026</td>
+                                        <td><span class="badge badge-info">قيد الدراسة</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Tab 3: Hearings -->
+                        <div id="dash-hearings" class="dash-tab-content" style="display: none;">
+                            <h3 style="margin-bottom: 1.5rem;" data-i18n="dash_hearings">الجلسات القادمة</h3>
+                            <div style="background: var(--bg-white); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1rem;">
+                                    <div>
+                                        <strong style="font-size: 1.1rem; color: var(--primary-dark);">القضية #2026-0145</strong>
+                                        <p style="color: var(--text-muted); font-size: 0.9rem;">المحكمة الابتدائية بأريانة - القاعة رقم 4</p>
+                                    </div>
+                                    <span class="badge badge-warning">20 أكتوبر 2026 - 09:00</span>
+                                </div>
+                                <p style="font-size: 0.95rem;" data-i18n="hearing_note">ملاحظة: جلسة مرافعة وتقديم مؤيدات نهائية.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tab 4: Documents -->
+                        <div id="dash-docs" class="dash-tab-content" style="display: none;">
+                            <h3 style="margin-bottom: 1.5rem;" data-i18n="dash_docs">الوثائق والعقود</h3>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th data-i18n="doc_name">اسم الوثيقة</th>
+                                        <th data-i18n="doc_date">تاريخ الإضافة</th>
+                                        <th data-i18n="doc_size">الحجم</th>
+                                        <th>الإجراء</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>عقد التوكيل القانوني.pdf</td>
+                                        <td>12/01/2026</td>
+                                        <td>2.4 MB</td>
+                                        <td><button class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;" data-i18n="download">تحميل</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>نسخة من العقد التجاري المتنازع فيه.pdf</td>
+                                        <td>15/01/2026</td>
+                                        <td>4.1 MB</td>
+                                        <td><button class="btn btn-outline" style="padding: 0.3rem 0.8rem; font-size: 0.8rem;" data-i18n="download">تحميل</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Tab 5: Messages -->
+                        <div id="dash-messages" class="dash-tab-content" style="display: none;">
+                            <h3 style="margin-bottom: 1.5rem;" data-i18n="dash_messages">الرسائل والمراسلات مع المحامية</h3>
+                            <div style="background: var(--bg-white); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; height: 300px; overflow-y: auto; display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="align-self: flex-start; background: #f1f5f9; padding: 1rem; border-radius: 8px; max-width: 70%;">
+                                    <strong style="display: block; font-size: 0.8rem; color: var(--accent);">الأستاذة فولانة بن فولان</strong>
+                                    <p style="font-size: 0.95rem;" data-i18n="msg_sample_1">السلام عليكم، تم إيداع المؤيدات المطلوبة لدى قلم كتاب المحكمة بنجاح.</p>
+                                </div>
+                                <div style="align-self: flex-end; background: var(--primary-dark); color: #fff; padding: 1rem; border-radius: 8px; max-width: 70%;">
+                                    <strong style="display: block; font-size: 0.8rem; color: var(--accent);">محمد بن علي</strong>
+                                    <p style="font-size: 0.95rem;" data-i18n="msg_sample_2">وعليكم السلام، شكراً جزيلاً أستاذة على المجهود والمتابعة المستمرة.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem;">
+                                <input type="text" class="form-control" style="background: #fff; color: var(--text-main); border-color: var(--border-color);" placeholder="اكتب رسالتك هنا..." data-i18n-placeholder="type_msg">
+                                <button class="btn btn-primary" data-i18n="send">إرسال</button>
+                            </div>
+                        </div>
+
+                        <!-- Tab 6: Invoices -->
+                        <div id="dash-invoices" class="dash-tab-content" style="display: none;">
+                            <h3 style="margin-bottom: 1.5rem;" data-i18n="dash_invoices">الفواتير والأتعاب</h3>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>رقم الفاتورة</th>
+                                        <th>الخدمة</th>
+                                        <th>المبلغ</th>
+                                        <th>الحالة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>INV-2026-0012</td>
+                                        <td>استشارة قانونية أولية</td>
+                                        <td>150 TND</td>
+                                        <td><span class="badge badge-success">مدفوعة</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>INV-2026-0017</td>
+                                        <td>أتعاب متابعة قضية تجارية</td>
+                                        <td>400 TND</td>
+                                        <td><span class="badge badge-danger">غير مدفوعة</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERTISE MODAL -->
+    <div class="modal-overlay" id="expertiseModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle">تفاصيل مجال الاختصاص</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription" style="margin-bottom: 1.5rem; font-size: 1.05rem;"></p>
+                <h4 style="margin-bottom: 1rem;" data-i18n="services_included">الخدمات المضمنة في هذا الاختصاص:</h4>
+                <ul id="modalServicesList" style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                    <!-- Populated dynamically -->
+                </ul>
+                <button class="btn btn-primary" onclick="closeModal(); openBookingModal();" data-i18n="book_consultation_now">احجز استشارة في هذا المجال</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toastMessage">
+        <i class="fa-solid fa-circle-check" style="color: var(--accent); font-size: 1.2rem;"></i>
+        <span id="toastText">تم إرسال الطلب بنجاح</span>
+    </div>
+
+    <script>
+        // MULTILINGUAL DICTIONARY
+        const translations = {
+            ar: {
+                logo_name: "فولانة بن فولان",
+                lawyer_status: "محامية متربصة",
+                nav_home: "الرئيسية",
+                nav_about: "عن المحامية",
+                nav_expertise: "الاختصاصات",
+                nav_services: "الخدمات القانونية",
+                nav_cases: "القضايا",
+                nav_articles: "المقالات القانونية",
+                nav_faq: "الأسئلة الشائعة",
+                nav_contact: "اتصل بنا",
+                consultation: "احجز استشارة",
+                hero_title: "الاستشارة القانونية تبدأ بفهم قضيتك",
+                hero_subtitle_span: "مكتب المحامية فولانة بن فولان - أريانة، تونس",
+                hero_desc: "نقدم خدمات قانونية متكاملة للأفراد والشركات مع الالتزام التام بالسرية، الاحترافية، وتقديم الحلول القانونية الناجعة.",
+                phone: "الهاتف",
+                address_title: "الموقع",
+                address_val: "أريانة سنتر ",
+                hero_btn_book: "احجز موعداً",
+                hero_btn_req: "اطلب استشارة",
+                hero_card_title: "ضماناتنا المهنية",
+                trust_1: "سرية المعلومات",
+                trust_2: "استشارة شخصية",
+                trust_3: "متابعة قانونية دقيقة",
+                trust_4: "مواعيد مرنة",
+                about_heading: "عن المحامية",
+                about_subheading: "الكفاءة المهنية، الالتزام بالأخلاقيات، والحرص الدائم على حماية مصالح الموكلين.",
+                lawyer_name: "فولانة بن فولان",
+                governorate: "الولاية",
+                address: "العنوان",
+                full_address: "أريانة سنتر",
+                timeline_1_date: "المسار الأكاديمي",
+                timeline_1_title: "إجازة في الحقوق والعلوم القانونية",
+                timeline_1_desc: "التخرج بتفوق مع التركيز على القانون الخاص وقانون الأعمال.",
+                timeline_2_date: "التدريب المهني",
+                timeline_2_title: "معهد المهنة المحاماة",
+                timeline_2_desc: "تلقي تكوين ميداني مكثف في إجراءات التقاضي والمرافعات.",
+                timeline_3_date: "الممارسة القانونية الحالية",
+                timeline_3_title: "مكتب أريانة سنتر",
+                timeline_3_desc: "مباشرة القضايا المدنية، التجارية، والعقارية وتقديم الاستشارات.",
+                expertise_heading: "مجالات الاختصاص",
+                expertise_subheading: "تغطية قانونية شاملة لمختلف فروع القانون لتلبية احتياجاتكم بدقة واحترافية.",
+                exp_civil: "القانون المدني",
+                exp_civil_desc: "النزاعات العقارية، التعويضات، المسؤولية المدنية، والعقود.",
+                exp_commercial: "القانون التجاري والشركات",
+                exp_commercial_desc: "تأسيس الشركات، نزاعات الشركاء، وتحصيل الديون التجارية.",
+                exp_realestate: "القانون العقاري",
+                exp_realestate_desc: "عقود البيع والشراء، النزاعات العقارية، والتسجيل العقاري.",
+                exp_family: "قانون الأسرة والأحوال الشخصية",
+                exp_family_desc: "قضايا الطلاق، النفقة، الحضانة، والتركات.",
+                exp_labor: "قانون الشغل",
+                exp_labor_desc: "نزاعات الشغل، الفصل التعسفي، ومستحقات العمال.",
+                exp_contracts: "صياغة العقود والاستشارات",
+                exp_contracts_desc: "صياغة ومراجعة العقود التجارية والمدنية وتقديم الاستشارات المسبقة.",
+                services_count: "خدمات",
+                explore_more: "اكتشف المزيد",
+                services_heading: "الخدمات القانونية",
+                services_subheading: "خدمات مخصصة تضمن تمثيلاً قانونياً قوياً وحلولاً عملية فعالة.",
+                serv_1_title: "الاستشارات القانونية المباشرة",
+                serv_1_desc: "جلسات استشارية معمقة لتحليل وضعيتك القانونية وتحديد أفضل السبل المتاحة.",
+                serv_duration: "المدة:",
+                serv_docs: "المطلوب:",
+                book_service: "احجز هذه الخدمة",
+                serv_2_title: "صياغة ومراجعة العقود",
+                serv_2_desc: "حماية حقوقك التعاقدية من خلال صياغة دقيقة ومحكمة تتوافق مع التشريع التونسي.",
+                serv_3_title: "التمثيل القانوني والمرافعات",
+                serv_3_desc: "الدفاع عن مصالحك أمام كافة المحاكم التونسية بمختلف درجاتها باحترافية تامة.",
+                booking_heading: "حجز استشارة قانونية",
+                booking_subheading: "اختر نوع الاستشارة والوقت المناسب لتأكيد موعدك بكل سهولة.",
+                step_1_title: "اختر نوع الاستشارة",
+                opt_civil: "استشارة مدنية",
+                opt_commercial: "استشارة تجارية",
+                opt_realestate: "استشارة عقارية",
+                opt_family: "استشارة أسرية",
+                next: "التالي",
+                prev: "السابق",
+                step_2_title: "طريقة الاستشارة المفضلة",
+                method_inperson: "حضورية بالمكتب (أريانة سنتر)",
+                method_phone: "استشارة هاتفية",
+                method_video: "مكالمة فيديو",
+                step_3_title: "اختيار التاريخ والوقت",
+                label_date: "التاريخ المطلوب",
+                label_time: "الوقت المناسب",
+                step_4_title: "معلومات العميل",
+                label_fullname: "الاسم الكامل",
+                label_phone: "رقم الهاتف",
+                label_email: "البريد الإلكتروني",
+                label_subject: "موضوع الاستشارة أو باختصار القضية",
+                label_desc: "تفاصيل إضافية أو وصف للمشكلة",
+                submit_booking: "تأكيد حجز الاستشارة",
+                articles_heading: "المقالات القانونية",
+                articles_subheading: "آخر المستجدات القانونية والنصائح العملية لتثقيف الموكلين.",
+                art_tag_1: "القانون العقاري",
+                art_1_title: "إجراءات تسجيل العقارات غير المسجلة في القانون التونسي",
+                art_1_desc: "دليل مبسط حول الخطوات والمستندات الضرورية لتسجيل الأراضي والعقارات لدى ديوان قف الملكية العقارية.",
+                art_tag_2: "قانون الشركات",
+                art_2_title: "كيفية حماية شركتك الناشئة عقودياً قانونياً",
+                art_2_desc: "أهم البنود التي يجب أن تتضمنها عقود الشراكة والتشغيل لتفادي النزاعات المستقبلية بين الشركاء.",
+                art_tag_3: "قانون الشغل",
+                art_3_title: "حقوق الأجير في حالة الفصل التعسفي حسب مجلة الشغل",
+                art_3_desc: "ما هي الخطوات القانونية اللازمة ومقدار التعويضات المستحقة في صورة الإنهاء التعسفي لعقد العمل.",
+                read_more: "قراءة المقال",
+                faq_heading: "الأسئلة الشائعة",
+                faq_subheading: "إجابات على أبرز التساؤلات القانونية والإجرائية المعتادة.",
+                faq_q1: "كيف يمكن حجز استشارة قانونية مع المحامية؟",
+                faq_a1: "يمكنك حجز الاستشارة مباشرة عبر موقعنا الإلكتروني من خلال استمارة حجز المواعيد في الأعلى، أو الاتصال هاتفياً بالرقم 00 000 000 أو زيارة المكتب بأريانة سنتر.",
+                faq_q2: "ما هي الوثائق المطلوبة لحضور الاستشارة الأولى؟",
+                faq_a2: "يُرجى إحضار بطاقة الهوية الوطنية وكافة الوثائق والمستندات المتعلقة بنزاعك أو موضوع استشارتك (عقود، رسائل تنبيه، أحكام سابقة إن وجدت) لتقديم استشارة دقيقة.",
+                faq_q3: "هل يمكن إجراء الاستشارة عن بعد عبر الهاتف أو الفيديو؟",
+                faq_a3: "نعم، نوفر خدمة الاستشارات عن بعد للموكلين المقيمين خارج ولاية أريانة أو خارج أرض الوطن عبر المكالمات الهاتفية أو تطبيقات الفيديو بعد حجز الموعد مسبقاً.",
+                faq_q4: "كيف يمكن متابعة مستجدات القضية الخاصة بي؟",
+                faq_a4: "يمكنك الدخول إلى \"بوابة الموكل\" الخاصة بك في موقعنا باستخدام رقم هاتفك أو بريدك الإلكتروني للاطلاع على حالة القضايا الجلسات والوثائق المضافة فورياً.",
+                contact_heading: "اتصل بنا",
+                contact_subheading: "نسعد بتواصلكم معنا لتقديم الاستشارة والدعم القانوني اللازم.",
+                contact_info_title: "مكتب المحامية فولانة بن فولان",
+                hours_title: "أوقات العمل",
+                hours_val: "الإثنين - الجمعة: 08:30 - 17:00 | السبت: 09:00 - 13:00",
+                send_msg: "إرسال رسالة سريعة",
+                send_btn: "إرسال الرسالة",
+                portal_title: "بوابة العميل - لوحة المتابعة",
+                dash_overview: "الرئيسية",
+                dash_cases: "قضاياي",
+                dash_hearings: "الجلسات القادمة",
+                dash_docs: "الوثائق والعقود",
+                dash_messages: "الرسائل والمراسلات",
+                dash_invoices: "الفواتير والأتعاب",
+                dash_logout: "خروج",
+                welcome_client: "مرحباً، محمد بن علي",
+                stat_active_cases: "القضايا النشطة",
+                stat_next_hearing: "الجلسة القادمة",
+                stat_docs: "الوثائق المرفقة",
+                stat_invoices: "الفواتير غير المدفوعة",
+                recent_cases_title: "آخر القضايا والملفات",
+                table_case_num: "رقم القضية",
+                table_case_type: "نوع القضية",
+                table_court: "المحكمة",
+                table_status: "الحالة",
+                case_type_1: "نزاع تجاري وعقود",
+                court_ariana: "المحكمة الابتدائية بأريانة",
+                status_hearing: "جلسة قادمة",
+                case_type_2: "قضية عقارية مدنية",
+                court_tunis: "محكمة الاستئناف بتونس",
+                status_study: "قيد الدراسة",
+                hearing_note: "ملاحظة: جلسة مرافعة وتقديم مؤيدات نهائية.",
+                doc_name: "اسم الوثيقة",
+                doc_date: "تاريخ الإضافة",
+                doc_size: "الحجم",
+                download: "تحميل",
+                msg_sample_1: "السلام عليكم، تم إيداع المؤيدات المطلوبة لدى قلم كتاب المحكمة بنجاح.",
+                msg_sample_2: "وعليكم السلام، شكراً جزيلاً أستاذة على المجهود والمتابعة المستمرة.",
+                send: "إرسال",
+                services_included: "الخدمات المضمنة في هذا الاختصاص:",
+                book_consultation_now: "احجز استشارة في هذا المجال"
+            },
+            fr: {
+                logo_name: "Oumaima Alloui",
+                lawyer_status: "Avocate stagiaire",
+                nav_home: "Accueil",
+                nav_about: "À propos",
+                nav_expertise: "Domaines",
+                nav_services: "Services",
+                nav_cases: "Affaires",
+                nav_articles: "Articles",
+                nav_faq: "FAQ",
+                nav_contact: "Contact",
+                consultation: "Réserver",
+                hero_title: "Votre consultation juridique commence par la compréhension de votre affaire",
+                hero_subtitle_span: "Cabinet de l'avocate Oumaima Alloui - Ariana, Tunisie",
+                hero_desc: "Nous offrons des services juridiques complets pour particuliers et entreprises avec un engagement total envers la confidentialité et le professionnalisme.",
+                phone: "Téléphone",
+                address_title: "Adresse",
+                address_val: "Ariana Centre, 4ème étage",
+                hero_btn_book: "Prendre RDV",
+                hero_btn_req: "Demander avis",
+                hero_card_title: "Nos Garanties",
+                trust_1: "Confidentialité totale",
+                trust_2: "Consultation personnalisée",
+                trust_3: "Suivi juridique rigoureux",
+                trust_4: "Horaires flexibles",
+                about_heading: "À propos de l'avocate",
+                about_subheading: "Compétence professionnelle, respect de l'éthique et dévouement pour la défense des clients.",
+                lawyer_name: "Oumaima Alloui",
+                governorate: "Gouvernorat",
+                address: "Adresse",
+                full_address: "Complexe Administratif et Commercial, Bureau S 420, 4ème étage, 2080 Ariana Centre",
+                timeline_1_date: "Parcours académique",
+                timeline_1_title: "Maîtrise en Droit et Sciences Juridiques",
+                timeline_1_desc: "Diplômée avec mention, spécialisation en droit des affaires et droit privé.",
+                timeline_2_date: "Formation professionnelle",
+                timeline_2_title: "Institut de la Profession d'Avocat",
+                timeline_2_desc: "Formation pratique intensive en procédures judiciaires et plaidoyer.",
+                timeline_3_date: "Pratique actuelle",
+                timeline_3_title: "Cabinet Ariana Centre",
+                timeline_3_desc: "Traitement des affaires civiles, commerciales, immobilières et consultation.",
+                expertise_heading: "Domaines d'Expertise",
+                expertise_subheading: "Couverture juridique complète pour répondre précisément à vos besoins.",
+                exp_civil: "Droit Civil",
+                exp_civil_desc: "Litiges immobiliers, dommages et intérêts, responsabilité civile et contrats.",
+                exp_commercial: "Droit Commercial & Sociétés",
+                exp_commercial_desc: "Création de sociétés, litiges entre associés et recouvrement de créances.",
+                exp_realestate: "Droit Immobilier",
+                exp_realestate_desc: "Contrats de vente, litiges fonciers et immatriculation.",
+                exp_family: "Droit de la Famille",
+                exp_family_desc: "Divorce, pensions alimentaires, garde d'enfants et successions.",
+                exp_labor: "Droit du Travail",
+                exp_labor_desc: "Litiges professionnels, licenciement abusif et indemnités.",
+                exp_contracts: "Rédaction de Contrats",
+                exp_contracts_desc: "Rédaction et révision de contrats commerciaux et civils, conseils préventifs.",
+                services_count: "services",
+                explore_more: "En savoir plus",
+                services_heading: "Services Juridiques",
+                services_subheading: "Des services sur mesure garantissant une représentation solide et efficace.",
+                serv_1_title: "Consultations Juridiques Directes",
+                serv_1_desc: "Séances d'analyse approfondies pour déterminer la meilleure stratégie juridique.",
+                serv_duration: "Durée:",
+                serv_docs: "Requis:",
+                book_service: "Réserver ce service",
+                serv_2_title: "Rédaction & Révision de Contrats",
+                serv_2_desc: "Protection de vos intérêts contractuels conformément à la législation tunisienne.",
+                serv_3_title: "Représentation en Justice & Plaidoyer",
+                serv_3_desc: "Défense de vos intérêts devant toutes les juridictions tunisiennes.",
+                booking_heading: "Réserver une Consultation",
+                booking_subheading: "Choisissez le type de consultation et l'horaire qui vous convient.",
+                step_1_title: "Type de consultation",
+                opt_civil: "Consultation Civile",
+                opt_commercial: "Consultation Commerciale",
+                opt_realestate: "Consultation Immobilière",
+                opt_family: "Consultation Familiale",
+                next: "Suivant",
+                prev: "Précédent",
+                step_2_title: "Mode de consultation",
+                method_inperson: "Au cabinet (Ariana Centre)",
+                method_phone: "Par téléphone",
+                method_video: "Par visioconférence",
+                step_3_title: "Date et Heure",
+                label_date: "Date souhaitée",
+                label_time: "Heure disponible",
+                step_4_title: "Informations du Client",
+                label_fullname: "Nom complet",
+                label_phone: "Téléphone",
+                label_email: "E-mail",
+                label_subject: "Sujet ou résumé de l'affaire",
+                label_desc: "Détails supplémentaires",
+                submit_booking: "Confirmer la réservation",
+                articles_heading: "Articles Juridiques",
+                articles_subheading: "Actualités juridiques et conseils pratiques pour informer les clients.",
+                art_tag_1: "Droit Immobilier",
+                art_1_title: "Procédures d'immatriculation foncière en Tunisie",
+                art_1_desc: "Guide simplifié sur les étapes et documents nécessaires auprès de la Conservation Foncière.",
+                art_tag_2: "Droit des Sociétés",
+                art_2_title: "Protéger juridiquement sa startup par les contrats",
+                art_2_desc: "Clauses essentielles des pactes d'associés pour éviter les litiges futurs.",
+                art_tag_3: "Droit du Travail",
+                art_3_title: "Droits du salarié en cas de licenciement abusif",
+                art_3_desc: "Démarches légales et indemnités en cas de rupture abusive du contrat de travail.",
+                read_more: "Lire l'article",
+                faq_heading: "Questions Fréquentes",
+                faq_subheading: "Réponses aux questions juridiques et procédurales les plus courantes.",
+                faq_q1: "Comment réserver une consultation avec l'avocate ?",
+                faq_a1: "Directement en ligne via notre formulaire, par téléphone au 00 000 000 ou en visitant le cabinet à Ariana Centre.",
+                faq_q2: "Quels documents apporter lors du premier rendez-vous ?",
+                faq_a2: "Votre carte d'identité ainsi que tous les documents relatifs à votre litige (contrats, mises en demeure, jugements).",
+                faq_q3: "Puis-je consulter à distance ?",
+                faq_a3: "Oui, nous proposons des consultations à distance par téléphone ou visio pour les clients éloignés.",
+                faq_q4: "Comment suivre l'évolution de mon affaire ?",
+                faq_a4: "En vous connectant à votre Espace Client sur notre site avec votre téléphone ou e-mail.",
+                contact_heading: "Contactez-nous",
+                contact_subheading: "Nous sommes à votre disposition pour toute consultation ou soutien juridique.",
+                contact_info_title: "Cabinet de l'avocate Oumaima Alloui",
+                hours_title: "Horaires",
+                hours_val: "Lun - Ven : 08:30 - 17:00 | Sam : 09:00 - 13:00",
+                send_msg: "Envoyer un message rapide",
+                send_btn: "Envoyer",
+                portal_title: "Portail Client - Tableau de Bord",
+                dash_overview: "Accueil",
+                dash_cases: "Mes Affaires",
+                dash_hearings: "Prochaines Audiences",
+                dash_docs: "Documents & Contrats",
+                dash_messages: "Messages",
+                dash_invoices: "Factures & Honoraires",
+                dash_logout: "Déconnexion",
+                welcome_client: "Bienvenue, Mohamed Ben Ali",
+                stat_active_cases: "Affaires Actives",
+                stat_next_hearing: "Prochaine Audience",
+                stat_docs: "Documents",
+                stat_invoices: "Factures impayées",
+                recent_cases_title: "Dernières Affaires",
+                table_case_num: "N° Affaire",
+                table_case_type: "Type",
+                table_court: "Juridiction",
+                table_status: "Statut",
+                case_type_1: "Litige commercial & Contrats",
+                court_ariana: "Tribunal de Première Instance de l'Ariana",
+                status_hearing: "Audience à venir",
+                case_type_2: "Affaire immobilière",
+                court_tunis: "Cour d'Appel de Tunis",
+                status_study: "En cours d'étude",
+                hearing_note: "Remarque : Audience de plaidoirie et dépôt de conclusions.",
+                doc_name: "Nom du document",
+                doc_date: "Date",
+                doc_size: "Taille",
+                download: "Télécharger",
+                msg_sample_1: "Bonjour, les pièces requises ont été déposées au greffe avec succès.",
+                msg_sample_2: "Bonjour Maître, merci beaucoup pour votre suivi rigoureux.",
+                send: "Envoyer",
+                services_included: "Services inclus dans ce domaine :",
+                book_consultation_now: "Réserver une consultation dans ce domaine"
+            },
+            en: {
+                logo_name: "Oumaima Alloui",
+                lawyer_status: "Trainee Lawyer",
+                nav_home: "Home",
+                nav_about: "About",
+                nav_expertise: "Expertise",
+                nav_services: "Services",
+                nav_cases: "Cases",
+                nav_articles: "Articles",
+                nav_faq: "FAQ",
+                nav_contact: "Contact",
+                consultation: "Book Consultation",
+                hero_title: "Legal consultation starts with understanding your case",
+                hero_subtitle_span: "Law Office of Oumaima Alloui - Ariana, Tunisia",
+                hero_desc: "We provide comprehensive legal services for individuals and corporations with a firm commitment to confidentiality, professionalism, and effective legal solutions.",
+                phone: "Phone",
+                address_title: "Location",
+                address_val: "Ariana Centre, 4th Floor",
+                hero_btn_book: "Book an Appointment",
+                hero_btn_req: "Request Consultation",
+                hero_card_title: "Our Professional Guarantees",
+                trust_1: "Strict Confidentiality",
+                trust_2: "Personalized Consultation",
+                trust_3: "Rigorous Legal Follow-up",
+                trust_4: "Flexible Scheduling",
+                about_heading: "About the Lawyer",
+                about_subheading: "Professional competence, ethical commitment, and dedication to protecting clients' interests.",
+                lawyer_name: "Oumaima Alloui",
+                governorate: "Governorate",
+                address: "Address",
+                full_address: "Administrative & Commercial Complex, Office S 420, 4th Floor, 2080 Ariana Centre",
+                timeline_1_date: "Academic Background",
+                timeline_1_title: "Bachelor in Law & Legal Sciences",
+                timeline_1_desc: "Graduated with honors, focusing on private law and business law.",
+                timeline_2_date: "Professional Training",
+                timeline_2_title: "Institute of Legal Profession",
+                timeline_2_desc: "Intensive practical training in litigation procedures and advocacy.",
+                timeline_3_date: "Current Practice",
+                timeline_3_title: "Ariana Centre Office",
+                timeline_3_desc: "Handling civil, commercial, and real estate cases, plus legal advisory.",
+                expertise_heading: "Areas of Expertise",
+                expertise_subheading: "Comprehensive legal coverage across various fields to meet your exact needs.",
+                exp_civil: "Civil Law",
+                exp_civil_desc: "Real estate disputes, damages, civil liability, and contracts.",
+                exp_commercial: "Commercial & Corporate Law",
+                exp_commercial_desc: "Company formation, partner disputes, and commercial debt collection.",
+                exp_realestate: "Real Estate Law",
+                exp_realestate_desc: "Purchase contracts, property disputes, and land registration.",
+                exp_family: "Family & Personal Status Law",
+                exp_family_desc: "Divorce, alimony, child custody, and inheritance.",
+                exp_labor: "Labor Law",
+                exp_labor_desc: "Employment disputes, wrongful termination, and worker entitlements.",
+                exp_contracts: "Contract Drafting & Advisory",
+                exp_contracts_desc: "Drafting and reviewing commercial and civil contracts with preventive advice.",
+                services_count: "services",
+                explore_more: "Explore More",
+                services_heading: "Legal Services",
+                services_subheading: "Tailored services ensuring strong representation and practical solutions.",
+                serv_1_title: "Direct Legal Consultations",
+                serv_1_desc: "In-depth consultation sessions to analyze your legal standing and best pathways.",
+                serv_duration: "Duration:",
+                serv_docs: "Required:",
+                book_service: "Book This Service",
+                serv_2_title: "Contract Drafting & Review",
+                serv_2_desc: "Protecting your contractual rights through precise wording under Tunisian law.",
+                serv_3_title: "Legal Representation & Litigation",
+                serv_3_desc: "Defending your interests before all Tunisian courts with total professionalism.",
+                booking_heading: "Book a Legal Consultation",
+                booking_subheading: "Choose your consultation type and preferred time to confirm effortlessly.",
+                step_1_title: "Select Consultation Type",
+                opt_civil: "Civil Consultation",
+                opt_commercial: "Commercial Consultation",
+                opt_realestate: "Real Estate Consultation",
+                opt_family: "Family Consultation",
+                next: "Next",
+                prev: "Previous",
+                step_2_title: "Preferred Consultation Method",
+                method_inperson: "In-office (Ariana Centre)",
+                method_phone: "Phone Consultation",
+                method_video: "Video Call",
+                step_3_title: "Select Date & Time",
+                label_date: "Preferred Date",
+                label_time: "Available Time",
+                step_4_title: "Client Information",
+                label_fullname: "Full Name",
+                label_phone: "Phone Number",
+                label_email: "Email Address",
+                label_subject: "Subject or Brief Case Summary",
+                label_desc: "Additional Details",
+                submit_booking: "Confirm Booking",
+                articles_heading: "Legal Articles",
+                articles_subheading: "Latest legal developments and practical tips for clients.",
+                art_tag_1: "Real Estate Law",
+                art_1_title: "Procedures for unregistered land registration in Tunisia",
+                art_1_desc: "A simplified guide on steps and documents required at the Land Registry office.",
+                art_tag_2: "Corporate Law",
+                art_2_title: "Legally protecting your startup through contracts",
+                art_2_desc: "Essential clauses to include in partnership agreements to prevent future disputes.",
+                art_tag_3: "Labor Law",
+                art_3_title: "Employee rights in case of wrongful termination",
+                art_3_desc: "Legal steps required and compensation entitled in case of arbitrary contract termination.",
+                read_more: "Read Article",
+                faq_heading: "Frequently Asked Questions",
+                faq_subheading: "Answers to common legal and procedural inquiries.",
+                faq_q1: "How can I book a legal consultation with the lawyer?",
+                faq_a1: "Directly online via our booking form, by calling 00 000 000, or by visiting our office at Ariana Centre.",
+                faq_q2: "What documents are required for the first consultation?",
+                faq_a2: "Please bring your national ID card and all relevant documents concerning your dispute (contracts, notices, judgments).",
+                faq_q3: "Can consultations be held remotely via phone or video?",
+                faq_a3: "Yes, we offer remote consultations for clients outside Ariana or abroad via phone or video calls after prior booking.",
+                faq_q4: "How can I track updates on my case?",
+                faq_a4: "You can log into your Client Portal on our website using your phone or email to view instant updates.",
+                contact_heading: "Contact Us",
+                contact_subheading: "We welcome your contact to provide legal consultation and support.",
+                contact_info_title: "Law Office of Oumaima Alloui",
+                hours_title: "Working Hours",
+                hours_val: "Mon - Fri: 08:30 - 17:00 | Sat: 09:00 - 13:00",
+                send_msg: "Send a Quick Message",
+                send_btn: "Send Message",
+                portal_title: "Client Portal - Dashboard",
+                dash_overview: "Dashboard",
+                dash_cases: "My Cases",
+                dash_hearings: "Upcoming Hearings",
+                dash_docs: "Documents",
+                dash_messages: "Messages",
+                dash_invoices: "Invoices & Fees",
+                dash_logout: "Logout",
+                welcome_client: "Welcome, Mohamed Ben Ali",
+                stat_active_cases: "Active Cases",
+                stat_next_hearing: "Next Hearing",
+                stat_docs: "Documents",
+                stat_invoices: "Unpaid Invoices",
+                recent_cases_title: "Recent Cases",
+                table_case_num: "Case No.",
+                table_case_type: "Type",
+                table_court: "Court",
+                table_status: "Status",
+                case_type_1: "Commercial Dispute & Contracts",
+                court_ariana: "Court of First Instance of Ariana",
+                status_hearing: "Upcoming Hearing",
+                case_type_2: "Real Estate Case",
+                court_tunis: "Court of Appeal of Tunis",
+                status_study: "Under Study",
+                hearing_note: "Note: Plea hearing and final submissions.",
+                doc_name: "Document Name",
+                doc_date: "Date Added",
+                doc_size: "Size",
+                download: "Download",
+                msg_sample_1: "Hello, the required submissions were successfully filed at the court registry.",
+                msg_sample_2: "Hello Counsel, thank you very much for your continuous follow-up.",
+                send: "Send",
+                services_included: "Services included in this specialty:",
+                book_consultation_now: "Book a consultation in this field"
+            }
+        };
+
+        // Current Language State
+        let currentLang = localStorage.getItem('omaima_lang') || 'ar';
+
+        window.addEventListener('DOMContentLoaded', () => {
+            switchLanguage(currentLang, false);
+        });
+
+        function switchLanguage(lang, showToastMsg = true) {
+            currentLang = lang;
+            localStorage.setItem('omaima_lang', lang);
+
+            const htmlEl = document.documentElement;
+            htmlEl.setAttribute('lang', lang);
+            if (lang === 'ar') {
+                htmlEl.setAttribute('dir', 'rtl');
+                document.getElementById('currentLangLabel').innerText = 'العربية';
+            } else if (lang === 'fr') {
+                htmlEl.setAttribute('dir', 'ltr');
+                document.getElementById('currentLangLabel').innerText = 'Français';
+            } else {
+                htmlEl.setAttribute('dir', 'ltr');
+                document.getElementById('currentLangLabel').innerText = 'English';
+            }
+
+            // Update all data-i18n elements
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerText = translations[lang][key];
+                }
+            });
+
+            // Update placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (translations[lang] && translations[lang][key]) {
+                    el.placeholder = translations[lang][key];
+                }
+            });
+
+            // Update dropdown highlights
+            document.querySelectorAll('.lang-option').forEach(opt => {
+                opt.classList.remove('selected');
+                if (opt.getAttribute('onclick').includes(lang)) {
+                    opt.classList.add('selected');
+                }
+            });
+
+            document.getElementById('langMenu').classList.remove('active');
+
+            if (showToastMsg) {
+                showToast(lang === 'ar' ? 'تم تغيير اللغة بنجاح' : (lang === 'fr' ? 'Langue changée avec succès' : 'Language changed successfully'));
+            }
+        }
+
+        // Toggle Language Dropdown
+        document.getElementById('langToggle').addEventListener('click', (e) => {
+            e.stopPropagation();
+            document.getElementById('langMenu').classList.toggle('active');
+        });
+
+        window.addEventListener('click', () => {
+            document.getElementById('langMenu').classList.remove('active');
+        });
+
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.main-nav');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+            if(nav.style.display === 'flex') {
+                nav.style.position = 'absolute';
+                nav.style.top = '90px';
+                nav.style.left = '0';
+                nav.style.width = '100%';
+                nav.style.background = 'var(--bg-white)';
+                nav.style.flexDirection = 'column';
+                nav.style.padding = '2rem';
+                nav.style.boxShadow = 'var(--shadow-lg)';
+            }
+        }
+
+        // Booking Form Wizard logic
+        let currentStep = 1;
+        const bookingData = {};
+
+        function selectOption(el, key, value) {
+            const parent = el.parentElement;
+            parent.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+            el.classList.add('selected');
+            bookingData[key] = value;
+        }
+
+        function nextBookingStep(step) {
+            document.getElementById(`booking-step-${currentStep}`).classList.remove('active');
+            document.getElementById(`dot-${currentStep}`).classList.remove('active');
+            document.getElementById(`dot-${currentStep}`).classList.add('completed');
+            
+            currentStep = step;
+            document.getElementById(`booking-step-${currentStep}`).classList.add('active');
+            document.getElementById(`dot-${currentStep}`).classList.add('active');
+        }
+
+        function prevBookingStep(step) {
+            document.getElementById(`booking-step-${currentStep}`).classList.remove('active');
+            document.getElementById(`dot-${currentStep}`).classList.remove('active');
+            
+            currentStep = step;
+            document.getElementById(`booking-step-${currentStep}`).classList.add('active');
+            document.getElementById(`dot-${currentStep}`).classList.add('active');
+            document.getElementById(`dot-${currentStep}`).classList.remove('completed');
+        }
+
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const refNo = 'OM-' + Math.floor(100000 + Math.random() * 900000);
+            showToast(currentLang === 'ar' ? `تم حجز الاستشارة بنجاح! رقم المرجع: ${refNo}` : `Booking successful! Ref No: ${refNo}`);
+            document.getElementById('consultationBookingForm').reset();
+            nextBookingStep(1);
+            currentStep = 1;
+            document.querySelectorAll('.step-dot').forEach((d, idx) => {
+                d.classList.remove('active', 'completed');
+                if(idx === 0) d.classList.add('active');
+            });
+        }
+
+        // Contact Form Submit
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast(currentLang === 'ar' ? 'تم إرسال رسالتكم بنجاح. سنرد في أقرب وقت.' : 'Message sent successfully. We will reply soon.');
+            e.target.reset();
+        }
+
+        // Expertise Modal
+        const expertiseDetails = {
+            civil: {
+                title: "القانون المدني",
+                desc: "نقدم استشارات وتمثيلاً قانونياً في مختلف نزاعات القانون المدني، بما في ذلك العقود، التعويضات، المسؤولية التقصيرية، والدعاوى العقارية.",
+                services: ["النزاعات العقارية وقضايا الاستحقاق", "قضايا التعويض عن الأضرار وحوادث المرور", "نزاعات عقود الكراء والإخلاء", "تنفيذ الأحكام وعقود الرهن"]
+            },
+            commercial: {
+                title: "القانون التجاري والشركات",
+                desc: "مواكبة الشركات التجارية منذ مرحلة التأسيس مروراً بصياغة عقود الشراكة وصولاً إلى تحصيل الديون وحل النزاعات التجارية.",
+                services: ["تأسيس الشركات وإعداد القوانين الأساسية", "نزاعات الشركاء وحل الخلافات التجارية", "تحصيل الديون المستحقة وتنفيذ الأذون بالدفع", "صياغة عقود التوزيع والوكالة التجارية"]
+            },
+            realestate: {
+                title: "القانون العقاري",
+                desc: "استشارات متخصصة في الوضعيات العقارية، صياغة عقود البيع، ومتابعة قضايا التسجيل العقاري والنزاعات المتعلقة بالأملاك.",
+                services: ["صياغة عقود البيع والوعود بالبيع العقاري", "تسجيل العقارات لدى ديوان الملكية العقارية", "قضايا الشياع وقسمة التركات العقارية", "النزاعات المتعلقة بالحدود والارتفاق"]
+            },
+            family: {
+                title: "قانون الأسرة والأحوال الشخصية",
+                desc: "معالجة دقيقة وسرية لقضايا الأسرة مع الحرص على إيجاد حلول ودية أو تمثيل قانوني لحماية حقوق الموكل وأفراد عائلته.",
+                services: ["قضايا الطلاق بالتراضي أو بالإنشاء", "تقدير ومراجعة النفقة وحضانة الأبناء", "تنظيم زيارة المحضون", "قضايا التركات وتصفيتها قانونياً"]
+            },
+            labor: {
+                title: "قانون الشغل",
+                desc: "الدفاع عن حقوق الأجراء والمتأجّرين في نزاعات الشغل والفصل التعسفي، ومساعدة المؤسسات في صياغة النظام الداخلي وعقود العمل.",
+                services: ["قضايا الفصل التعسفي ومطالبة بالمستحقات", "نزاعات عقود العمل محددة وغير محددة المدة", "مفقدية الشغل ومحاضر الصلح", "صياغة عقود العمل والنظام الداخلي للمؤسسة"]
+            },
+            contracts: {
+                title: "صياغة العقود والاستشارات المسبقة",
+                desc: "الحماية القانونية تبدأ بعقد محكم. نؤمن لعملائنا صياغة مسبقة تحميهم من المخاطر المستقبلية وتضمن وضوح البنود.",
+                services: ["صياغة كافة أنواع العقود التجارية والمدنية", "مراجعة العقود الجاهزة وإبداء الرأي القانوني", "تقديم استشارات وقائية لتفادي النزاعات", "صياغة اتفاقيات الصلح والاتفاقيات السرية"]
+            }
+        };
+
+        function openModal(key) {
+            const data = expertiseDetails[key];
+            if(!data) return;
+            document.getElementById('modalTitle').innerText = data.title;
+            document.getElementById('modalDescription').innerText = data.desc;
+            const listEl = document.getElementById('modalServicesList');
+            listEl.innerHTML = '';
+            data.services.forEach(s => {
+                const li = document.createElement('li');
+                li.innerHTML = `<i class="fa-solid fa-check" style="color: var(--accent); margin-inline-end: 10px;"></i> ${s}`;
+                listEl.appendChild(li);
+            });
+            document.getElementById('expertiseModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('expertiseModal').classList.remove('active');
+        }
+
+        // Client Portal Modal
+        function openClientPortalModal() {
+            document.getElementById('clientPortalModal').classList.add('active');
+        }
+
+        function closeClientPortalModal() {
+            document.getElementById('clientPortalModal').classList.remove('active');
+        }
+
+        function switchDashboardTab(el, tabId) {
+            document.querySelectorAll('.dashboard-nav-item').forEach(i => i.classList.remove('active'));
+            el.classList.add('active');
+            document.querySelectorAll('.dash-tab-content').forEach(c => c.style.display = 'none');
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // FAQ Accordion
+        function toggleFaq(el) {
+            const isActive = el.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+            if(!isActive) {
+                el.classList.add('active');
+            }
+        }
+
+        // Toast Notification
+        function showToast(text) {
+            const toast = document.getElementById('toastMessage');
+            document.getElementById('toastText').innerText = text;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
+
+        function openBookingModal() {
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

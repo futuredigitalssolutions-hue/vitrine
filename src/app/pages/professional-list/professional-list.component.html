@@ -1,0 +1,25 @@
+<div class="professional-list-page">
+  <div class="container">
+    <div class="header-section">
+      <button class="back-btn" (click)="goBack()">← Retour</button>
+      <h1>Liste des {{getDomainName()}}</h1>
+      <p class="subtitle">Sélectionnez un professionnel pour voir son profil détaillé</p>
+    </div>
+
+    <div class="professionals-grid">
+      <div class="professional-card" *ngFor="let pro of professionals" (click)="navigateToDetail(pro.id)">
+        <div class="pro-image">
+          <img [src]="pro.image" [alt]="pro.name">
+        </div>
+        <div class="pro-info">
+          <h3>{{pro.name}}</h3>
+          <p class="specialty">{{pro.specialty}}</p>
+          <p class="location">📍 {{pro.location}}</p>
+          <div class="tags">
+            <span class="tag" *ngFor="let tag of pro.tags">{{tag}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

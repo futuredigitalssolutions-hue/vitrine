@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأستاذ فولان بن فولان - محامي لدى الاستئناف بصفاقس | Maître Foulen ben Foulen</title>
+    <!-- Google Fonts: Amiri & Tajawal for Arabic, Playfair Display & Inter for Latin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #1A365D; /* Deep Executive Navy */
+            --primary-dark: #0F233F;
+            --secondary: #C5A059; /* Premium Gold */
+            --secondary-light: #DFBF7A;
+            --accent: #8E1616; /* Subtle Tunisian Red Accent */
+            --bg-light: #F8FAFC;
+            --bg-white: #FFFFFF;
+            --text-main: #2D3748;
+            --text-muted: #718096;
+            --border-color: #E2E8F0;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-md: 0 10px 25px -5px rgba(26, 54, 93, 0.08), 0 8px 10px -6px rgba(26, 54, 93, 0.08);
+            --shadow-lg: 0 20px 35px -10px rgba(26, 54, 93, 0.12);
+            --font-ar-heading: 'Amiri', serif;
+            --font-ar-body: 'Tajawal', sans-serif;
+            --font-lat-heading: 'Playfair Display', serif;
+            --font-lat-body: 'Inter', sans-serif;
+        }
+
+        /* Base & Resets */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-ar-body);
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Language-specific typography adjustments */
+        body[data-lang="ar"] {
+            font-family: var(--font-ar-body);
+        }
+        body[data-lang="ar"] h1, body[data-lang="ar"] h2, body[data-lang="ar"] h3, body[data-lang="ar"] h4 {
+            font-family: var(--font-ar-heading);
+        }
+
+        body[data-lang="fr"], body[data-lang="en"] {
+            font-family: var(--font-lat-body);
+        }
+        body[data-lang="fr"] h1, body[data-lang="fr"] h2, body[data-lang="fr"] h3, body[data-lang="fr"] h4,
+        body[data-lang="en"] h1, body[data-lang="en"] h2, body[data-lang="en"] h3, body[data-lang="en"] h4 {
+            font-family: var(--font-lat-heading);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 90px 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-subtitle {
+            color: var(--secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .section-desc {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--primary-dark);
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .top-bar-info {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-info item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-bar-info i {
+            color: var(--secondary);
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 5px;
+            background: rgba(255,255,255,0.1);
+            padding: 3px;
+            border-radius: 4px;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .lang-btn.active, .lang-btn:hover {
+            background-color: var(--secondary);
+            color: var(--primary-dark);
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--secondary);
+        }
+
+        .logo-text h1 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            position:ించింది;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--secondary);
+        }
+
+        .nav-cta {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: var(--primary-dark);
+            border-color: var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-light);
+            border-color: var(--secondary-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: #fff;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(26, 54, 93, 0.95) 0%, rgba(15, 35, 63, 0.98) 100%), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            color: #fff;
+            padding: 140px 0 120px;
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(197, 160, 89, 0.15);
+            border: 1px solid var(--secondary);
+            color: var(--secondary-light);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .hero-title {
+            font-size: 3.2rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero-title span {
+            color: var(--secondary);
+        }
+
+        .hero-desc {
+            font-size: 1.15rem;
+            color: #E2E8F0;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-card h3 {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 15px;
+        }
+
+        .hero-card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .hero-card-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: #CBD5E1;
+        }
+
+        .hero-card-item i {
+            color: var(--secondary);
+            margin-top: 5px;
+        }
+
+        /* Stats Bar */
+        .stats-section {
+            background-color: var(--bg-white);
+            padding: 40px 0;
+            box-shadow: var(--shadow-sm);
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+            border-radius: 8px;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            height: 480px;
+            object-fit: cover;
+        }
+
+        .about-badge-box {
+            position: absolute;
+            bottom: -30px;
+            background: var(--primary);
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-md);
+            border-left: 5px solid var(--secondary);
+            right: -30px;
+            max-width: 280px;
+        }
+
+        /* Adjust box position based on RTL/LTR */
+        body[data-lang="ar"] .about-badge-box {
+            right: auto;
+            left: -30px;
+            border-left: none;
+            border-right: 5px solid var(--secondary);
+        }
+
+        .about-badge-box h4 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .about-badge-box p {
+            font-size: 0.9rem;
+            color: #CBD5E1;
+        }
+
+        .about-content h2 {
+            font-size: 2.3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .about-content p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .feature-box i {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            background: rgba(197, 160, 89, 0.1);
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .feature-box h5 {
+            font-size: 1.05rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .feature-box p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Expertise Section */
+        .expertise-section {
+            background-color: #F1F5F9;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .expertise-card {
+            background: var(--bg-white);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border-top: 4px solid transparent;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+            border-top-color: var(--secondary);
+        }
+
+        .expertise-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(26, 54, 93, 0.05);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            transition: var(--transition);
+        }
+
+        .expertise-card:hover .expertise-icon {
+            background: var(--primary);
+            color: var(--secondary);
+        }
+
+        .expertise-card h3 {
+            font-size: 1.35rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .expertise-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .expertise-link {
+            color: var(--primary);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .expertise-link:hover {
+            color: var(--secondary);
+            gap: 12px;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            padding: 35px;
+            border-radius: 12px;
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            border-color: var(--secondary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary);
+            opacity: 0.4;
+            line-height: 1;
+        }
+
+        .service-info h3 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .service-info p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Timeline / Career Section */
+        .career-section {
+            background-color: var(--bg-white);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        body[data-lang="fr"] .timeline::before, body[data-lang="en"] .timeline::before {
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            padding: 20px 0;
+            position: relative;
+            width: 50%;
+            clear: both;
+        }
+
+        .timeline-item:nth-child(odd) {
+            float: right;
+            padding-left: 40px;
+            text-align: right;
+        }
+
+        body[data-lang="ar"] .timeline-item:nth-child(odd) {
+            float: left;
+            padding-left: 0;
+            padding-right: 40px;
+            text-align: right;
+        }
+
+        body[data-lang="fr"] .timeline-item:nth-child(odd), body[data-lang="en"] .timeline-item:nth-child(odd) {
+            float: left;
+            padding-left: 0;
+            padding-right: 40px;
+            text-align: left;
+        }
+
+        .timeline-item:nth-child(even) {
+            float: left;
+            padding-right: 40px;
+            text-align: left;
+        }
+
+        body[data-lang="ar"] .timeline-item:nth-child(even) {
+            float: right;
+            padding-right: 0;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        body[data-lang="fr"] .timeline-item:nth-child(even), body[data-lang="en"] .timeline-item:nth-child(even) {
+            float: right;
+            padding-right: 0;
+            padding-left: 40px;
+            text-align: right;
+        }
+
+        .timeline-content {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .timeline-year {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--primary-dark);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        .timeline-content h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .timeline-content p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: var(--primary);
+            border: 3px solid var(--secondary);
+            border-radius: 50%;
+            top: 35px;
+            z-index: 10;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            left: -8px;
+        }
+
+        body[data-lang="ar"] .timeline-item:nth-child(odd) .timeline-dot {
+            left: auto;
+            right: -8px;
+        }
+
+        body[data-lang="fr"] .timeline-item:nth-child(odd) .timeline-dot, body[data-lang="en"] .timeline-item:nth-child(odd) .timeline-dot {
+            left: auto;
+            right: -8px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            right: -8px;
+        }
+
+        body[data-lang="ar"] .timeline-item:nth-child(even) .timeline-dot {
+            right: auto;
+            left: -8px;
+        }
+
+        body[data-lang="fr"] .timeline-item:nth-child(even) .timeline-dot, body[data-lang="en"] .timeline-item:nth-child(even) .timeline-dot {
+            right: auto;
+            left: -8px;
+        }
+
+        /* Clearfix for timeline */
+        .timeline::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        /* Articles Section */
+        .articles-section {
+            background-color: #F1F5F9;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .article-card {
+            background: var(--bg-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .article-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .article-body {
+            padding: 25px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .article-meta i {
+            color: var(--secondary);
+        }
+
+        .article-body h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .article-body p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .faq-item {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-question {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.05rem;
+        }
+
+        .faq-question i {
+            transition: var(--transition);
+            color: var(--secondary);
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 0 20px 20px 20px;
+        }
+
+        .faq-banner {
+            background: var(--primary);
+            color: #fff;
+            padding: 50px;
+            border-radius: 12px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .faq-banner h3 {
+            color: var(--secondary);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .faq-banner p {
+            color: #CBD5E1;
+            margin-bottom: 30px;
+        }
+
+        /* Booking & Contact Section */
+        .contact-booking-section {
+            background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+        }
+
+        .cb-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+        }
+
+        .contact-info-box {
+            background: var(--primary);
+            color: #fff;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-info-box h3 {
+            color: var(--secondary);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info-box > p {
+            color: #CBD5E1;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .contact-detail-item i {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-top: 4px;
+        }
+
+        .contact-detail-item h5 {
+            color: #fff;
+            font-size: 0.95rem;
+            margin-bottom: 3px;
+        }
+
+        .contact-detail-item p, .contact-detail-item a {
+            color: #CBD5E1;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .contact-detail-item a:hover {
+            color: var(--secondary);
+        }
+
+        .working-hours {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .working-hours h5 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .working-hours ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: #CBD5E1;
+        }
+
+        .working-hours li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-container {
+            background: var(--bg-white);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-container h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .form-container > p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            background: var(--bg-light);
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            background: var(--bg-white);
+            box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.15);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 0;
+            height: 450px;
+            width: 100%;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-dark);
+            color: #fff;
+            padding: 80px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-col h4 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary);
+        }
+
+        body[data-lang="fr"] .footer-col h4::after, body[data-lang="en"] .footer-col h4::after {
+            right: auto;
+            left: 0;
+        }
+
+        .footer-col p {
+            color: #94A3B8;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: #94A3B8;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-right: 5px;
+        }
+
+        body[data-lang="fr"] .footer-links a:hover, body[data-lang="en"] .footer-links a:hover {
+            padding-right: 0;
+            padding-left: 5px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            color: #94A3B8;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact-item i {
+            color: var(--secondary);
+            margin-top: 4px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            color: #94A3B8;
+            font-size: 0.9rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            width: 38px;
+            height: 38px;
+            background: rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #fff;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background: var(--secondary);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background-color: #25D366;
+            color: #FFF;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: var(--shadow-lg);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        body[data-lang="fr"] .whatsapp-float, body[data-lang="en"] .whatsapp-float {
+            left: auto;
+            right: 30px;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-grid, .about-grid, .faq-grid, .cb-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .expertise-grid, .articles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .about-img {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-cta {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .expertise-grid, .articles-grid, .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-title {
+                font-size: 2.3rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .top-bar-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .top-bar-info {
+                justify-content: center;
+            }
+            .timeline::before {
+                right: 20px !important;
+                left: auto !important;
+            }
+            .timeline-item {
+                width: 100% !important;
+                float: none !important;
+                padding-right: 0 !important;
+                padding-left: 50px !important;
+                text-align: right !important;
+            }
+            body[data-lang="fr"] .timeline-item, body[data-lang="en"] .timeline-item {
+                text-align: left !important;
+                padding-left: 50px !important;
+                padding-right: 0 !important;
+            }
+            .timeline-dot {
+                right: 12px !important;
+                left: auto !important;
+            }
+            body[data-lang="fr"] .timeline-dot, body[data-lang="en"] .timeline-dot {
+                right: auto !important;
+                left: 12px !important;
+            }
+        }
+
+        /* Mobile Menu Drawer */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            height: 100vh;
+            background: var(--bg-white);
+            z-index: 2000;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        body[data-lang="fr"] .mobile-menu, body[data-lang="en"] .mobile-menu {
+            right: auto;
+            left: -100%;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+        body[data-lang="fr"] .mobile-menu.active, body[data-lang="en"] .mobile-menu.active {
+            left: 0;
+            right: auto;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        .close-menu-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .mobile-nav-links a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1500;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body data-lang="ar" dir="rtl">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-info">
+                <div><i class="fa-solid fa-location-dot"></i> <span data-i18n="top_address">عمارة الانطلاقة، مدرج ب 2، صفاقس</span></div>
+                <div><i class="fa-solid fa-phone"></i> <span dir="ltr">74 296 008</span></div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <div class="top-bar-info hidden-mobile">
+                    <div><i class="fa-solid fa-clock"></i> <span data-i18n="top_hours">الإثنين - الجمعة: 08:00 - 18:00</span></div>
+                </div>
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('ar')">AR</button>
+                    <button class="lang-btn" onclick="setLanguage('fr')">FR</button>
+                    <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                <div class="logo-text">
+                    <h1 data-i18n="lawyer_name">الصحبي الطريقي</h1>
+                    <span data-i18n="lawyer_title">محامي لدى الاستئناف</span>
+                </div>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#accueil" data-i18n="nav_home">الرئيسية</a>
+                <a href="#apropos" data-i18n="nav_about">من نحن</a>
+                <a href="#expertise" data-i18n="nav_expertise">مجالات الاختصاص</a>
+                <a href="#services" data-i18n="nav_services">الخدمات</a>
+                <a href="#parcours" data-i18n="nav_career">المسار المهني</a>
+                <a href="#articles" data-i18n="nav_articles">المقالات</a>
+                <a href="#faq" data-i18n="nav_faq">الأسئلة الشائعة</a>
+                <a href="#contact" data-i18n="nav_contact">اتصل بنا</a>
+            </div>
+
+            <div class="nav-cta">
+                <a href="tel:74296008" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;"><i class="fa-solid fa-phone"></i> <span data-i18n="cta_call">اتصل الآن</span></a>
+                <a href="#contact" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;"><span data-i18n="cta_appoint">حجز موعد</span></a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <div class="logo-text">
+                    <h1 style="font-size: 1.1rem;" data-i18n="lawyer_name">الصحبي الطريقي</h1>
+                    <span style="font-size: 0.75rem;" data-i18n="lawyer_title">محامي لدى الاستئناف</span>
+                </div>
+            </div>
+            <button class="close-menu-btn" onclick="toggleMobileMenu()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#accueil" onclick="toggleMobileMenu()" data-i18n="nav_home">الرئيسية</a>
+            <a href="#apropos" onclick="toggleMobileMenu()" data-i18n="nav_about">من نحن</a>
+            <a href="#expertise" onclick="toggleMobileMenu()" data-i18n="nav_expertise">مجالات الاختصاص</a>
+            <a href="#services" onclick="toggleMobileMenu()" data-i18n="nav_services">الخدمات</a>
+            <a href="#parcours" onclick="toggleMobileMenu()" data-i18n="nav_career">المسار المهني</a>
+            <a href="#articles" onclick="toggleMobileMenu()" data-i18n="nav_articles">المقالات</a>
+            <a href="#faq" onclick="toggleMobileMenu()" data-i18n="nav_faq">الأسئلة الشائعة</a>
+            <a href="#contact" onclick="toggleMobileMenu()" data-i18n="nav_contact">اتصل بنا</a>
+        </div>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px;">
+            <a href="tel:74296008" class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fa-solid fa-phone"></i> <span data-i18n="cta_call">اتصل الآن</span></a>
+            <a href="https://wa.me/21658696086" target="_blank" class="btn btn-secondary" style="width: 100%; justify-content: center;"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span data-i18n="hero_badge">مكتب محاماة معتمد بصفاقس - تونس</span>
+                    </div>
+                    <h1 class="hero-title" data-i18n="hero_title">خبرة قانونية عريقة ودفاع صارمة عن حقوقك في <span>صفاقس</span></h1>
+                    <p class="hero-desc" data-i18n="hero_desc">الأستاذ الصحبي الطريقي، محامي لدى الاستئناف بصفاقس، يقدم استشارات قانونية متقدمة وتمثيل قانوني محترف للمؤسسات والأفراد أمام مختلف المحاكم التونسية بموثوقية عالية.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-calendar-check"></i> <span data-i18n="hero_btn_appoint">حجز استشارة قانونية</span></a>
+                        <a href="#expertise" class="btn btn-outline" style="border-color: #fff; color: #fff;"><span data-i18n="hero_btn_explore">استكشف خدماتنا</span> <i class="fa-solid fa-arrow-left" id="hero-arrow"></i></a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <h3 data-i18n="hero_card_title"><i class="fa-solid fa-id-card"></i> بطاقة تعريفية</h3>
+                    <div class="hero-card-list">
+                        <div class="hero-card-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div><strong data-i18n="card_name_lbl">الاسم:</strong> الأستاذ الصحبي الطريقي</div>
+                        </div>
+                        <div class="hero-card-item">
+                            <i class="fa-solid fa-award"></i>
+                            <div><strong data-i18n="card_statut_lbl">الصفة:</strong> محامي لدى الاستئناف</div>
+                        </div>
+                        <div class="hero-card-item">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <div><strong data-i18n="card_addr_lbl">العنوان:</strong> عمارة الانطلاقة، مدرج ب 2، الطابق 5، شقة 4، 3000 صفاقس</div>
+                        </div>
+                        <div class="hero-card-item">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <div><strong data-i18n="card_tel_lbl">الهاتف/الفاكس:</strong> <span dir="ltr">74 296 008 / 74 296 014</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <div class="container">
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p data-i18n="stat_1">سنوات من الخبرة</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p data-i18n="stat_2">قضية ناجحة</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p data-i18n="stat_3">التزام وسرية</p>
+                </div>
+                <div class="stat-item">
+                    <h3>صفاقس</h3>
+                    <p data-i18n="stat_4">المقر الرئيسي</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="apropos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <img src="homme.jpeg" alt="مكتب الأستاذ الصحبي الطريقي" class="about-img">
+                    <div class="about-badge-box">
+                        <h4 data-i18n="about_badge_title">احترافية وموثوقية</h4>
+                        <p data-i18n="about_badge_desc">مكرسون لحماية مصالح الحرفاء بكل نزاهة واحترافية.</p>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-subtitle" data-i18n="about_subtitle">من نحن</span>
+                    <h2 data-i18n="about_title">الأستاذ الصحبي الطريقي - ضمانك القانوني في تونس</h2>
+                    <p data-i18n="about_desc_1">بفضل مسار مهني متميز في ساحة القضاء التونسي، يكرس الأستاذ الصحبي الطريقي، المحامي لدى الاستئناف بصفاقس، جهوده لتقديم استشارات قانونية دقيقة وتمثيل قضائي فعال للأفراد والشركات.</p>
+                    <p data-i18n="about_desc_2">نؤمن بأن كل قضية تتطلب استراتيجية مخصصة وعناية فائقة بالتفاصيل القانونية، مع الالتزام التام بأخلاقيات المهنة وسرية المعطيات.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-box">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            <div>
+                                <h5 data-i18n="feat_1_title">استشارة مخصصة</h5>
+                                <p data-i18n="feat_1_desc">تحليل دقيق لوضعيتك القانونية.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <h5 data-i18n="feat_2_title">استجابة سريعة</h5>
+                                <p data-i18n="feat_2_desc">متابعة فورية للملفات الطارئة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="exp_subtitle">مجالات الاختصاص</span>
+                <h2 class="section-title" data-i18n="exp_title">خبرة واسعة في مختلف فروع القانون التونسي</h2>
+                <p class="section-desc" data-i18n="exp_desc">نقدم خدمات استشارية وتقاضي شاملة تغطي مجالات قانونية متعددة لحماية حقوقكم المدنية والتجارية والجزائية.</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <h3 data-i18n="exp_1_title">قانون الأعمال والشركات</h3>
+                    <p data-i18n="exp_1_desc">تأسيس الشركات، صياغة العقود التجارية، وتسوية النزاعات التجارية بين المؤسسات والمزودين.</p>
+                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-1"></i></a>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
+                    <h3 data-i18n="exp_2_title">قانون الأحوال الشخصية والعائلية</h3>
+                    <p data-i18n="exp_2_desc">قضايا الطلاق، النفقة، الحضانة، الميراث، وتسوية النزاعات العائلية بكل سرية ودقة.</p>
+                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-2"></i></a>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon"><i class="fa-solid fa-gavel"></i></div>
+                    <h3 data-i18n="exp_3_title">القانون المدني والعقاري</h3>
+                    <p data-i18n="exp_3_desc">منازعات العقارات، الملكية، عقود الكراء، القضايا المدنية، وتحصيل الديون.</p>
+                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-3"></i></a>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon"><i class="fa-solid fa-handcuffs"></i></div>
+                    <h3 data-i18n="exp_4_title">القانون الجنائي والجزائي</h3>
+                    <p data-i18n="exp_4_desc">الدفاع أمام مختلف المحاكم الجزائية في القضايا الجنحية والجنائية ومواكبة الأبحاث التحقيقية.</p>
+                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-4"></i></a>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3 data-i18n="exp_5_title">قانون الشغل والنزاعات الاجتماعية</h3>
+                    <p data-i18n="exp_5_desc">النزاعات الشغلية، الفصل التعسفي، حوادث العمل، وتأطير العلاقات بين المؤجر والأجير.</p>
+                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-5"></i></a>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon"><i class="fa-solid fa-file-contract"></i></div>
+                    <h3 data-i18n="exp_6_title">الصياغة والتحكيم القانوني</h3>
+                    <p data-i18n="exp_6_desc">مراجعة وصياغة العقود المعقدة، تقديم الاستشارات الوقائية، والوساطة لحل النزاعات حبياً.</p>
+                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-6"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="serv_subtitle">خدماتنا القانونية</span>
+                <h2 class="section-title" data-i18n="serv_title">حلول قانونية متكاملة للأفراد والمؤسسات</h2>
+                <p class="section-desc" data-i18n="serv_desc">نرافقكم خطوة بخطوة في كافة المراحل القانونية لضمان أفضل النتائج والحلول الممكنة.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-num">01</div>
+                    <div class="service-info">
+                        <h3 data-i18n="serv_1_title">الاستشارات القانونية الدورية والوقائية</h3>
+                        <p data-i18n="serv_1_desc">تقديم استشارات فورية وموثوقة لتجنب المخاطر القانونية قبل تفاقمها، لفائدة الشركات والأفراد بصفاقس وكافة أنحاء الجمهورية.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-num">02</div>
+                    <div class="service-info">
+                        <h3 data-i18n="serv_2_title">التمثيل والتقاضي أمام المحاكم</h3>
+                        <p data-i18n="serv_2_desc">مرافعة ودفاع حصري أمام المحاكم الابتدائية ومحاكم الاستئناف، مع متابعة دقيقة لمختلف أطوار التقاضي.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-num">03</div>
+                    <div class="service-info">
+                        <h3 data-i18n="serv_3_title">صياغة العقود والاتفاقيات</h3>
+                        <p data-i18n="serv_3_desc">صياغة وتدقيق العقود التجارية، عقود البيع والشراء، الإيجارات، واتفاقيات الشراكة لضمان حماية قانونية قصوى.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-num">04</div>
+                    <div class="service-info">
+                        <h3 data-i18n="serv_4_title">تحصيل الديون وتسوية النزاعات</h3>
+                        <p data-i18n="serv_4_desc">إجراءات حثيثة لتحصيل المستحقات المالية بالطرق القانونية الحبيّة أو القضائية بأسرع الأوقات المتاحة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career / Timeline Section -->
+    <section id="parcours" class="career-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="career_subtitle">المسار المهني</span>
+                <h2 class="section-title" data-i18n="career_title">محطات بارزة في مسيرة التميز القانوني</h2>
+                <p class="section-desc" data-i18n="career_desc">تجارب مهنية غنية وتكوين أكاديمي راسخ في خدمة العدالة وسيادة القانون.</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year" data-i18n="car_1_year">الاعتماد المهني</span>
+                        <h3 data-i18n="car_1_title">محامي لدى الاستئناف</h3>
+                        <p data-i18n="car_1_desc">مباشرة مهنة المحاماة والاعتماد لدى محاكم الاستئناف مع توسيع نطاق الخدمات لتشمل كبرى المؤسسات.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year" data-i18n="car_2_year">تأسيس المكتب</span>
+                        <h3 data-i18n="car_2_title">انطلاق العمل بالمكتب الرئيسي بصفاقس</h3>
+                        <p data-i18n="car_2_desc">فتح المكتب الكائن بعمارة الانطلاقة بصفاقس، ليكون وجهة موثوقة للاستشارات والتقاضي.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year" data-i18n="car_3_year">التكوين الأكاديمي</span>
+                        <h3 data-i18n="car_3_title">التخرج والخبرة القانونية</h3>
+                        <p data-i18n="car_3_desc">الحصول على الإجازات والتكوين المعمق في فروع القانون التونسي والتدريب الميداني المتقدم.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles / News Section -->
+    <section id="articles" class="articles-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="art_subtitle">المستجدات القانونية</span>
+                <h2 class="section-title" data-i18n="art_title">مقالات وتحليلات قانونية حديثة</h2>
+                <p class="section-desc" data-i18n="art_desc">اطلع على آخر المقالات والمستجدات التشريعية في القانون التونسي لفهم حقوقك وواجباتك.</p>
+            </div>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="مقال قانوني" class="article-img">
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span><i class="fa-solid fa-calendar"></i> <span data-i18n="art_1_date">12 مارس 2026</span></span>
+                            <span><i class="fa-solid fa-tag"></i> <span data-i18n="art_1_tag">قانون الشركات</span></span>
+                        </div>
+                        <h3 data-i18n="art_1_title">أبرز مستجدات قانون الشركات التجارية في تونس وحماية المسيرين</h3>
+                        <p data-i18n="art_1_desc">تحليل لأحدث التعديلات التشريعية وكيفية تأثيرها على سير الشركات وتسييرها القانوني.</p>
+                        <a href="#contact" class="expertise-link"><span data-i18n="read_more">قراءة المقال</span> <i class="fa-solid fa-arrow-left" id="art-arrow-1"></i></a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" alt="مقال قانوني" class="article-img">
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span><i class="fa-solid fa-calendar"></i> <span data-i18n="art_2_date">28 فيفري 2026</span></span>
+                            <span><i class="fa-solid fa-tag"></i> <span data-i18n="art_2_tag">الأحوال الشخصية</span></span>
+                        </div>
+                        <h3 data-i18n="art_2_title">الإجراءات القانونية الحديثة في قضايا الطلاق والنفقة بالمحاكم التونسية</h3>
+                        <p data-i18n="art_2_desc">نظرة شاملة حول مسار القضايا الأسرية والآليات القانونية لحماية حقوق الأبناء والأزواج.</p>
+                        <a href="#contact" class="expertise-link"><span data-i18n="read_more">قراءة المقال</span> <i class="fa-solid fa-arrow-left" id="art-arrow-2"></i></a>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=600&q=80" alt="مقال قانوني" class="article-img">
+                    <div class="article-body">
+                        <div class="article-meta">
+                            <span><i class="fa-solid fa-calendar"></i> <span data-i18n="art_3_date">10 فيفري 2026</span></span>
+                            <span><i class="fa-solid fa-tag"></i> <span data-i18n="art_3_tag">قانون عقاري</span></span>
+                        </div>
+                        <h3 data-i18n="art_3_title">كيفية تأمين المعاملات العقارية وتجنب النزاعات في القانون التونسي</h3>
+                        <p data-i18n="art_3_desc">نصائح قانونية أساسية عند شراء أو بيع العقارات والتثبت من صلوحية السندات العقارية.</p>
+                        <a href="#contact" class="expertise-link"><span data-i18n="read_more">قراءة المقال</span> <i class="fa-solid fa-arrow-left" id="art-arrow-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="faq_subtitle">الأسئلة الشائعة</span>
+                <h2 class="section-title" data-i18n="faq_title">إجابات عن أبرز التساؤلات القانونية</h2>
+                <p class="section-desc" data-i18n="faq_desc">كل ما تحتاج معرفته حول إجراءات استشارة المحامي ورفع القضايا في تونس.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-accordion">
+                    <div class="faq-item active">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span data-i18n="faq_q1">كيف يمكنني حجز استشارة قانونية مع الأستاذ الصحبي الطريقي؟</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a1">يمكنكم حجز موعد بسهولة عبر الاتصال المباشر بمكتبنا على الهاتف رقم 74 296 008 أو عبر الواتساب على الرقم 58 696 086، أو عبر ملء استمارة الحجز في أسفل الصفحة.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span data-i18n="faq_q2">ما هي الوثائق المطلوبة عند زيارة المكتب لأول مرة؟</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a2">يُرجى إحضار بطاقة التعريف الوطنية وكل الوثائق ذات الصلة بملفك (عقود، استدعاءات قضائية، مراسلات، فواتير أو أي مستند يثبت حقوقك) لدراستها بدقة.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span data-i18n="faq_q3">أين يقع المكتب بالتحديد في صفاقس؟</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a3">يقع مكتبنا في موقع استراتيجي بصفاقس: عمارة الانطلاقة، مدرج ب 2، الطابق 5، شقة 4، رمز البريد 3000 صفاقس، تونس.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span data-i18n="faq_q4">هل تحظى استشارتي وملفاتي بالسرية التامة؟</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a4">نعم، السر المهني مقدس ومضمون قانوناً وأخلاقياً. كافة المعطيات والوثائق المقدمة تحظى بأعلى درجات السرية والخصوصية.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-banner">
+                    <h3 data-i18n="faq_banner_title">هل لديك استفسار قانوني عاجل؟</h3>
+                    <p data-i18n="faq_banner_desc">فريقنا القانوني مستعد للإجابة عن تساؤلاتكم ومرافقتكم فورياً.</p>
+                    <a href="tel:74296008" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> <span data-i18n="cta_call">اتصل بالمكتب الآن</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking & Contact Section -->
+    <section id="contact" class="contact-booking-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="contact_subtitle">اتصل بنا وحجز موعد</span>
+                <h2 class="section-title" data-i18n="contact_title">نحن هنا لتقديم الاستشارة والدعم القانوني</h2>
+                <p class="section-desc" data-i18n="contact_desc">تواصل معنا اليوم لحجز موعد استشارة أو طرح استفسارك القانوني.</p>
+            </div>
+            <div class="cb-grid">
+                <div class="contact-info-box">
+                    <div>
+                        <h3 data-i18n="ci_title">معلومات الاتصال</h3>
+                        <p data-i18n="ci_desc">يسعدنا تواصلكم معنا عبر قنواتنا الرسمية أو زيارة مكتبنا بصفاقس.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h5 data-i18n="ci_addr_h">العنوان الرئيسي</h5>
+                                    <p data-i18n="ci_addr_v">عمارة الانطلاقة، مدرج ب 2، الطابق 5، شقة 4، 3000 صفاقس، تونس</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h5 data-i18n="ci_tel_h">الهاتف الثابت</h5>
+                                    <p><a href="tel:74296008" dir="ltr">74 296 008</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div>
+                                    <h5 data-i18n="ci_mob_h">الهاتف المحمول / واتساب</h5>
+                                    <p><a href="tel:58696086" dir="ltr">58 696 086</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-fax"></i>
+                                <div>
+                                    <h5 data-i18n="ci_fax_h">الفاكس</h5>
+                                    <p><span dir="ltr">74 296 014</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="working-hours">
+                        <h5 data-i18n="wh_title"><i class="fa-solid fa-clock"></i> ساعات العمل بالمكتب</h5>
+                        <ul>
+                            <li><span data-i18n="wh_days">الإثنين - الجمعة:</span> <span>08:00 - 18:00</span></li>
+                            <li><span data-i18n="wh_sat">السبت:</span> <span>08:00 - 13:00</span></li>
+                            <li><span data-i18n="wh_sun">الأحد:</span> <span data-i18n="wh_closed">مغلق</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <h3 data-i18n="form_title">حجز استشارة أو مراسلة المكتب</h3>
+                    <p data-i18n="form_desc">املأ النموذج أدناه وسيقوم فريقنا بالاتصال بكم في أسرع وقت لتأكيد المموعد أو الطلب.</p>
+                    
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" class="form-control" data-placeholder="form_name_ph" placeholder="الاسم الكامل" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" data-placeholder="form_phone_ph" placeholder="رقم الهاتف" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" class="form-control" data-placeholder="form_email_ph" placeholder="البريد الإلكتروني (اختياري)">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value="" disabled selected data-i18n="form_opt_default">اختر مجال الاستشارة</option>
+                                    <option value="business" data-i18n="form_opt_1">قانون الأعمال والشركات</option>
+                                    <option value="family" data-i18n="form_opt_2">قانون الأحوال الشخصية</option>
+                                    <option value="civil" data-i18n="form_opt_3">القانون المدني والعقاري</option>
+                                    <option value="penal" data-i18n="form_opt_4">القانون الجنائي والجزائي</option>
+                                    <option value="labor" data-i18n="form_opt_5">قانون الشغل</option>
+                                    <option value="other" data-i18n="form_opt_6">استشارة عامة / أخرى</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" data-placeholder="form_msg_ph" placeholder="تفاصيل الاستشارة أو الطلب..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="width: 100%; justify-content: center; padding: 15px;"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="form_submit">إرسال الطلب وحجز الموعد</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.118717833075!2d10.7601!3d34.7406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDQ0JzI2LjIiTiAxMMKwNDUnMzYuNCJF!5e0!3m2!1sar!2stn!4v1650000000000!5m2!1sar!2stn" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقع مكتب الأستاذ الصحبي الطريقي بصفاقس"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <div class="logo-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <div class="logo-text">
+                            <h1 style="color: #fff;" data-i18n="lawyer_name">الصحبي الطريقي</h1>
+                            <span data-i18n="lawyer_title">محامي لدى الاستئناف</span>
+                        </div>
+                    </div>
+                    <p data-i18n="footer_desc">مكتب محاماة معتمد بصفاقس، يقدم خدمات قانونية رفيعة المستوى واستشارات دقيقة تمتاز بالنزاهة والاحترافية والسرية المطلقة لحماية مصالح الحرفاء.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/21658696086" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_quick_links">روابط سريعة</h4>
+                    <div class="footer-links">
+                        <a href="#accueil" data-i18n="nav_home">الرئيسية</a>
+                        <a href="#apropos" data-i18n="nav_about">من نحن</a>
+                        <a href="#expertise" data-i18n="nav_expertise">مجالات الاختصاص</a>
+                        <a href="#services" data-i18n="nav_services">الخدمات</a>
+                        <a href="#parcours" data-i18n="nav_career">المسار المهني</a>
+                        <a href="#contact" data-i18n="nav_contact">اتصل بنا</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_expertise">الاختصاصات</h4>
+                    <div class="footer-links">
+                        <a href="#expertise" data-i18n="exp_1_title">قانون الأعمال والشركات</a>
+                        <a href="#expertise" data-i18n="exp_2_title">الأحوال الشخصية والعائلية</a>
+                        <a href="#expertise" data-i18n="exp_3_title">القانون المدني والعقاري</a>
+                        <a href="#expertise" data-i18n="exp_4_title">القانون الجنائي والجزائي</a>
+                        <a href="#expertise" data-i18n="exp_5_title">قانون الشغل</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact_info">معلومات الاتصال</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-i18n="top_address">عمارة الانطلاقة، مدرج ب 2، الطابق 5، شقة 4، 3000 صفاقس</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span dir="ltr">74 296 008 / 58 696 086</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span dir="ltr">contact@sahbiettriki-avocat.tn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2026 الأستاذ الصحبي الطريقي - محامي لدى الاستئناف بصفاقس. جميع الحقوق محفوظة.</p>
+                <p style="font-size: 0.85rem;" data-i18n="footer_disclaimer">تصميم احترافي مطابق لأخلاقيات مهنة المحاماة بتونس</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/21658696086" target="_blank" class="whatsapp-float" aria-label="WhatsApp Chat">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript for Multi-language & Interactivity -->
+    <script>
+        // Dictionary for Multilingual Support (AR / FR / EN)
+        const translations = {
+            ar: {
+                top_address: "عمارة الانطلاقة، مدرج ب 2، صفاقس",
+                top_hours: "الإثنين - الجمعة: 08:00 - 18:00",
+                lawyer_name: "الصحبي الطريقي",
+                lawyer_title: "محامي لدى الاستئناف",
+                nav_home: "الرئيسية",
+                nav_about: "من نحن",
+                nav_expertise: "مجالات الاختصاص",
+                nav_services: "الخدمات",
+                nav_career: "المسار المهني",
+                nav_articles: "المقالات",
+                nav_faq: "الأسئلة الشائعة",
+                nav_contact: "اتصل بنا",
+                cta_call: "اتصل الآن",
+                cta_appoint: "حجز موعد",
+                hero_badge: "مكتب محاماة معتمد بصفاقس - تونس",
+                hero_title: "خبرة قانونية عريقة ودفاع صارمة عن حقوقك في <span>صفاقس</span>",
+                hero_desc: "الأستاذ الصحبي الطريقي، محامي لدى الاستئناف بصفاقس، يقدم استشارات قانونية متقدمة وتمثيل قانوني محترف للمؤسسات والأفراد أمام مختلف المحاكم التونسية بموثوقية عالية.",
+                hero_btn_appoint: "حجز استشارة قانونية",
+                hero_btn_explore: "استكشف خدماتنا",
+                hero_card_title: "بطاقة تعريفية",
+                card_name_lbl: "الاسم:",
+                card_statut_lbl: "الصفة:",
+                card_addr_lbl: "العنوان:",
+                card_tel_lbl: "الهاتف/الفاكس:",
+                stat_1: "سنوات من الخبرة",
+                stat_2: "قضية ناجحة",
+                stat_3: "التزام وسرية",
+                stat_4: "المقر الرئيسي",
+                about_subtitle: "من نحن",
+                about_title: "الأستاذ الصحبي الطريقي - ضمانك القانوني في تونس",
+                about_desc_1: "بفضل مسار مهني متميز في ساحة القضاء التونسي، يكرس الأستاذ الصحبي الطريقي، المحامي لدى الاستئناف بصفاقس، جهوده لتقديم استشارات قانونية دقيقة وتمثيل قضائي فعال للأفراد والشركات.",
+                about_desc_2: "نؤمن بأن كل قضية تتطلب استراتيجية مخصصة وعناية فائقة بالتفاصيل القانونية، مع الالتزام التام بأخلاقيات المهنة وسرية المعطيات.",
+                about_badge_title: "احترافية وموثوقية",
+                about_badge_desc: "مكرسون لحماية مصالح الحرفاء بكل نزاهة واحترافية.",
+                feat_1_title: "استشارة مخصصة",
+                feat_1_desc: "تحليل دقيق لوضعيتك القانونية.",
+                feat_2_title: "استجابة سريعة",
+                feat_2_desc: "متابعة فورية للملفات الطارئة.",
+                exp_subtitle: "مجالات الاختصاص",
+                exp_title: "خبرة واسعة في مختلف فروع القانون التونسي",
+                exp_desc: "نقدم خدمات استشارية وتقاضي شاملة تغطي مجالات قانونية متعددة لحماية حقوقكم المدنية والتجارية والجزائية.",
+                exp_1_title: "قانون الأعمال والشركات",
+                exp_1_desc: "تأسيس الشركات، صياغة العقود التجارية، وتسوية النزاعات التجارية بين المؤسسات والمزودين.",
+                exp_2_title: "قانون الأحوال الشخصية والعائلية",
+                exp_2_desc: "قضايا الطلاق، النفقة، الحضانة، الميراث، وتسوية النزاعات العائلية بكل سرية ودقة.",
+                exp_3_title: "القانون المدني والعقاري",
+                exp_3_desc: "منازعات العقارات، الملكية، عقود الكراء، القضايا المدنية، وتحصيل الديون.",
+                exp_4_title: "القانون الجنائي والجزائي",
+                exp_4_desc: "الدفاع أمام مختلف المحاكم الجزائية في القضايا الجنحية والجنائية ومواكبة الأبحاث التحقيقية.",
+                exp_5_title: "قانون الشغل والنزاعات الاجتماعية",
+                exp_5_desc: "النزاعات الشغلية، الفصل التعسفي، حوادث العمل، وتأطير العلاقات بين المؤجر والأجير.",
+                exp_6_title: "الصياغة والتحكيم القانوني",
+                exp_6_desc: "مراجعة وصياغة العقود المعقدة، تقديم الاستشارات الوقائية، والوساطة لحل النزاعات حبياً.",
+                learn_more: "اكتشف المزيد",
+                serv_subtitle: "خدماتنا القانونية",
+                serv_title: "حلول قانونية متكاملة للأفراد والمؤسسات",
+                serv_desc: "نرافقكم خطوة بخطوة في كافة المراحل القانونية لضمان أفضل النتائج والحلول الممكنة.",
+                serv_1_title: "الاستشارات القانونية الدورية والوقائية",
+                serv_1_desc: "تقديم استشارات فورية وموثوقة لتجنب المخاطر القانونية قبل تفاقمها، لفائدة الشركات والأفراد بصفاقس وكافة أنحاء الجمهورية.",
+                serv_2_title: "التمثيل والتقاضي أمام المحاكم",
+                serv_2_desc: "مرافعة ودفاع حصري أمام المحاكم الابتدائية ومحاكم الاستئناف، مع متابعة دقيقة لمختلف أطوار التقاضي.",
+                serv_3_title: "صياغة العقود والاتفاقيات",
+                serv_3_desc: "صياغة وتدقيق العقود التجارية، عقود البيع والشراء، الإيجارات، واتفاقيات الشراكة لضمان حماية قانونية قصوى.",
+                serv_4_title: "تحصيل الديون وتسوية النزاعات",
+                serv_4_desc: "إجراءات حثيثة لتحصيل المستحقات المالية بالطرق القانونية الحبيّة أو القضائية بأسرع الأوقات المتاحة.",
+                career_subtitle: "المسار المهني",
+                career_title: "محطات بارزة في مسيرة التميز القانوني",
+                career_desc: "تجارب مهنية غنية وتكوين أكاديمي راسخ في خدمة العدالة وسيادة القانون.",
+                car_1_year: "الاعتماد المهني",
+                car_1_title: "محامي لدى الاستئناف",
+                car_1_desc: "مباشرة مهنة المحاماة والاعتماد لدى محاكم الاستئناف مع توسيع نطاق الخدمات لتشمل كبرى المؤسسات.",
+                car_2_year: "تأسيس المكتب",
+                car_2_title: "انطلاق العمل بالمكتب الرئيسي بصفاقس",
+                car_2_desc: "فتح المكتب الكائن بعمارة الانطلاقة بصفاقس، ليكون وجهة موثوقة للاستشارات والتقاضي.",
+                car_3_year: "التكوين الأكاديمي",
+                car_3_title: "التخرج والخبرة القانونية",
+                car_3_desc: "الحصول على الإجازات والتكوين المعمق في فروع القانون التونسي والتدريب الميداني المتقدم.",
+                art_subtitle: "المستجدات القانونية",
+                art_title: "مقالات وتحليلات قانونية حديثة",
+                art_desc: "اطلع على آخر المقالات والمستجدات التشريعية في القانون التونسي لفهم حقوقك وواجباتك.",
+                art_1_date: "12 مارس 2026",
+                art_1_tag: "قانون الشركات",
+                art_1_title: "أبرز مستجدات قانون الشركات التجارية في تونس وحماية المسيرين",
+                art_1_desc: "تحليل لأحدث التعديلات التشريعية وكيفية تأثيرها على سير الشركات وتسييرها القانوني.",
+                read_more: "قراءة المقال",
+                art_2_date: "28 فيفري 2026",
+                art_2_tag: "الأحوال الشخصية",
+                art_2_title: "الإجراءات القانونية الحديثة في قضايا الطلاق والنفقة بالمحاكم التونسية",
+                art_2_desc: "نظرة شاملة حول مسار القضايا الأسرية والآليات القانونية لحماية حقوق الأبناء والأزواج.",
+                art_3_date: "10 فيفري 2026",
+                art_3_tag: "قانون عقاري",
+                art_3_title: "كيفية تأمين المعاملات العقارية وتجنب النزاعات في القانون التونسي",
+                art_3_desc: "نصائح قانونية أساسية عند شراء أو بيع العقارات والتثبت من صلوحية السندات العقارية.",
+                faq_subtitle: "الأسئلة الشائعة",
+                faq_title: "إجابات عن أبرز التساؤلات القانونية",
+                faq_desc: "كل ما تحتاج معرفته حول إجراءات استشارة المحامي ورفع القضايا في تونس.",
+                faq_q1: "كيف يمكنني حجز استشارة قانونية مع الأستاذ الصحبي الطريقي؟",
+                faq_a1: "يمكنكم حجز موعد بسهولة عبر الاتصال المباشر بمكتبنا على الهاتف رقم 74 296 008 أو عبر الواتساب على الرقم 58 696 086، أو عبر ملء استمارة الحجز في أسفل الصفحة.",
+                faq_q2: "ما هي الوثائق المطلوبة عند زيارة المكتب لأول مرة؟",
+                faq_a2: "يُرجى إحضار بطاقة التعريف الوطنية وكل الوثائق ذات الصلة بملفك (عقود، استدعاءات قضائية، مراسلات، فواتير أو أي مستند يثبت حقوقك) لدراستها بدقة.",
+                faq_q3: "أين يقع المكتب بالتحديد في صفاقس؟",
+                faq_a3: "يقع مكتبنا في موقع استراتيجي بصفاقس: عمارة الانطلاقة، مدرج ب 2، الطابق 5، شقة 4، رمز البريد 3000 صفاقس، تونس.",
+                faq_q4: "هل تحظى استشارتي وملفاتي بالسرية التامة؟",
+                faq_a4: "نعم، السر المهني مقدس ومضمون قانوناً وأخلاقياً. كافة المعطيات والوثائق المقدمة تحظى بأعلى درجات السرية والخصوصية.",
+                faq_banner_title: "هل لديك استفسار قانوني عاجل؟",
+                faq_banner_desc: "فريقنا القانوني مستعد للإجابة عن تساؤلاتكم ومرافقتكم فورياً.",
+                contact_subtitle: "اتصل بنا وحجز موعد",
+                contact_title: "نحن هنا لتقديم الاستشارة والدعم القانوني",
+                contact_desc: "تواصل معنا اليوم لحجز موعد استشارة أو طرح استفسارك القانوني.",
+                ci_title: "معلومات الاتصال",
+                ci_desc: "يسعدنا تواصلكم معنا عبر قنواتنا الرسمية أو زيارة مكتبنا بصفاقس.",
+                ci_addr_h: "العنوان الرئيسي",
+                ci_addr_v: "عمارة الانطلاقة، مدرج ب 2، الطابق 5، شقة 4، 3000 صفاقس، تونس",
+                ci_tel_h: "الهاتف الثابت",
+                ci_mob_h: "الهاتف المحمول / واتساب",
+                ci_fax_h: "الفاكس",
+                wh_title: "ساعات العمل بالمكتب",
+                wh_days: "الإثنين - الجمعة:",
+                wh_sat: "السبت:",
+                wh_sun: "الأحد:",
+                wh_closed: "مغلق",
+                form_title: "حجز استشارة أو مراسلة المكتب",
+                form_desc: "املأ النموذج أدناه وسيقوم فريقنا بالاتصال بكم في أسرع وقت لتأكيد المموعد أو الطلب.",
+                form_name_ph: "الاسم الكامل",
+                form_phone_ph: "رقم الهاتف",
+                form_email_ph: "البريد الإلكتروني (اختياري)",
+                form_opt_default: "اختر مجال الاستشارة",
+                form_opt_1: "قانون الأعمال والشركات",
+                form_opt_2: "قانون الأحوال الشخصية",
+                form_opt_3: "القانون المدني والعقاري",
+                form_opt_4: "القانون الجنائي والجزائي",
+                form_opt_5: "قانون الشغل",
+                form_opt_6: "استشارة عامة / أخرى",
+                form_msg_ph: "تفاصيل الاستشارة أو الطلب...",
+                form_submit: "إرسال الطلب وحجز الموعد",
+                footer_desc: "مكتب محاماة معتمد بصفاقس، يقدم خدمات قانونية رفيعة المستوى واستشارات دقيقة تمتاز بالنزاهة والاحترافية والسرية المطلقة لحماية مصالح الحرفاء.",
+                footer_quick_links: "روابط سريعة",
+                footer_expertise: "الاختصاصات",
+                footer_contact_info: "معلومات الاتصال",
+                footer_copyright: "&copy; 2026 الأستاذ الصحبي الطريقي - محامي لدى الاستئناف بصفاقس. جميع الحقوق محفوظة.",
+                footer_disclaimer: "تصميم احترافي مطابق لأخلاقيات مهنة المحاماة بتونس"
+            },
+            fr: {
+                top_address: "Immeuble El Intilaka, Bloc B2, Sfax",
+                top_hours: "Lun - Ven: 08:00 - 18:00",
+                lawyer_name: "Maître Sahbi EtTRIKI",
+                lawyer_title: "Avocat à la Cour d'Appel",
+                nav_home: "Accueil",
+                nav_about: "À propos",
+                nav_expertise: "Expertises",
+                nav_services: "Services",
+                nav_career: "Parcours",
+                nav_articles: "Articles",
+                nav_faq: "FAQ",
+                nav_contact: "Contact",
+                cta_call: "Appeler",
+                cta_appoint: "Rendez-vous",
+                hero_badge: "Cabinet d'Avocat agréé à Sfax - Tunisie",
+                hero_title: "Expertise juridique d'excellence et défense rigoureuse de vos droits à <span>Sfax</span>",
+                hero_desc: "Maître Sahbi EtTRIKI, Avocat à la Cour d'Appel à Sfax, propose des conseils juridiques avancés et une représentation professionnelle pour les entreprises et les particuliers devant les juridictions tunisiennes.",
+                hero_btn_appoint: "Prendre rendez-vous",
+                hero_btn_explore: "Explorer nos services",
+                hero_card_title: "Carte d'Identité",
+                card_name_lbl: "Nom:",
+                card_statut_lbl: "Statut:",
+                card_addr_lbl: "Adresse:",
+                card_tel_lbl: "Tél / Fax:",
+                stat_1: "Années d'expérience",
+                stat_2: "Affaires traitées",
+                stat_3: "Engagement & Confiance",
+                stat_4: "Bureau Principal",
+                about_subtitle: "À propos du cabinet",
+                about_title: "Maître Sahbi EtTRIKI - Votre garantie juridique en Tunisie",
+                about_desc_1: "Fort d'un parcours remarquable au sein de la justice tunisienne, Maître Sahbi EtTRIKI met son expertise d'avocat à la Cour d'Appel au service des clients pour leur offrir des conseils précis et une représentation efficace.",
+                about_desc_2: "Chaque dossier requiert une stratégie sur-mesure et une rigueur absolue, dans le respect strict de l'éthique professionnelle et de la confidentialité.",
+                about_badge_title: "Professionnalisme",
+                about_badge_desc: "Dédiés à la protection des intérêts de nos clients avec intégrité.",
+                feat_1_title: "Conseil sur-mesure",
+                feat_1_desc: "Analyse précise de votre situation juridique.",
+                feat_2_title: "Réactivité",
+                feat_2_desc: "Suivi immédiat des dossiers urgents.",
+                exp_subtitle: "Domaines d'expertise",
+                exp_title: "Une vaste expérience dans les branches du droit tunisien",
+                exp_desc: "Nous offrons des prestations complètes en conseil et contentieux pour protéger vos droits civils, commerciaux et pénaux.",
+                exp_1_title: "Droit des Affaires & des Sociétés",
+                exp_1_desc: "Création de sociétés, rédaction de contrats commerciaux et règlement des litiges commerciaux.",
+                exp_2_title: "Droit de la Famille & Statut Personnel",
+                exp_2_desc: "Affaires de divorce, pensions alimentaires, garde d'enfants, successions et médiation familiale.",
+                exp_3_title: "Droit Civil & Immobilier",
+                exp_3_desc: "Litiges fonciers, propriété, contrats de bail, contentieux civil et recouvrement de créances.",
+                exp_4_title: "Droit Pénal & Criminel",
+                exp_4_desc: "Défense devant les juridictions répressives en matière correctionnelle et criminelle.",
+                exp_5_title: "Droit du Travail & Social",
+                exp_5_desc: "Litiges professionnels, licenciements abusifs, accidents du travail et relations employeur-salarié.",
+                exp_6_title: "Rédaction & Arbitrage Juridique",
+                exp_6_desc: "Révision et rédaction de contrats complexes, conseil préventif et résolution amiable des conflits.",
+                learn_more: "En savoir plus",
+                serv_subtitle: "Services juridiques",
+                serv_title: "Des solutions juridiques globales pour tous",
+                serv_desc: "Nous vous accompagnons à chaque étape procédurale pour garantir les meilleurs résultats.",
+                serv_1_title: "Conseils juridiques réguliers et préventifs",
+                serv_1_desc: "Assistance immédiate pour anticiper les risques juridiques au profit des entreprises et particuliers.",
+                serv_2_title: "Représentation et contentieux judiciaires",
+                serv_2_desc: "Plaidoirie et défense exclusive devant les tribunaux de première instance et cours d'appel.",
+                serv_3_title: "Rédaction de contrats et conventions",
+                serv_3_desc: "Élaboration rigoureuse de contrats commerciaux, ventes, locations et partenariats.",
+                serv_4_title: "Recouvrement de créances et litiges",
+                serv_4_desc: "Procédures actives pour recouvrer vos créances par voie amiable ou judiciaire.",
+                career_subtitle: "Parcours professionnel",
+                career_title: "Étapes clés de notre excellence juridique",
+                career_desc: "Un riche parcours et une formation académique solide au service de la justice.",
+                car_1_year: "Agréement",
+                car_1_title: "Avocat à la Cour d'Appel",
+                car_1_desc: "Exercice de la profession et représentation auprès des Cours d'Appel tunisiennes.",
+                car_2_year: "Fondation",
+                car_2_title: "Ouverture du Cabinet Principal à Sfax",
+                car_2_desc: "Implantation à l'immeuble El Intilaka à Sfax, devenu une référence de confiance.",
+                car_3_year: "Formation",
+                car_3_title: "Diplômes et Expérience Académique",
+                car_3_desc: "Obtention des diplômes en droit tunisien et formation approfondie en pratique judiciaire.",
+                art_subtitle: "Actualités juridiques",
+                art_title: "Articles et analyses juridiques récents",
+                art_desc: "Découvrez nos derniers articles sur les évolutions législatives en Tunisie.",
+                art_1_date: "12 Mars 2026",
+                art_1_tag: "Droit des Sociétés",
+                art_1_title: "Nouveautés du droit des sociétés commerciales en Tunisie",
+                art_1_desc: "Analyse des modifications législatives et de leur impact sur la gestion des entreprises.",
+                read_more: "Lire l'article",
+                art_2_date: "28 Fév 2026",
+                art_2_tag: "Statut Personnel",
+                art_2_title: "Procédures modernes en matière de divorce et pensions",
+                art_2_desc: "Aperçu global du parcours des affaires familiales et protection des droits.",
+                art_3_date: "10 Fév 2026",
+                art_3_tag: "Droit Immobilier",
+                art_3_title: "Sécuriser les transactions immobilières en Tunisie",
+                art_3_desc: "Conseils essentiels lors de l'achat ou de la vente de biens immobiliers.",
+                faq_subtitle: "FAQ",
+                faq_title: "Questions fréquemment posées",
+                faq_desc: "Tout ce que vous devez savoir sur la consultation et les procédures en Tunisie.",
+                faq_q1: "Comment prendre rendez-vous avec Maître Sahbi EtTRIKI ?",
+                faq_a1: "Vous pouvez réserver par téléphone au 74 296 008, via WhatsApp au 58 696 086 ou en remplissant le formulaire ci-dessous.",
+                faq_q2: "Quels documents apporter lors de la première visite ?",
+                faq_a2: "Veuillez vous munir de votre carte d'identité et de tous les documents relatifs à votre dossier (contrats, convocations, correspondances).",
+                faq_q3: "Où se situe exactement le cabinet à Sfax ?",
+                faq_a3: "Immeuble El Intilaka, Bloc B2, 5ème étage, App 4, 3000 Sfax, Tunisie.",
+                faq_q4: "Mes consultations et dossiers sont-ils totalement confidentiels ?",
+                faq_a4: "Oui, le secret professionnel est absolu et garanti par la loi et l'éthique de la profession d'avocat.",
+                faq_banner_title: "Une question juridique urgente ?",
+                faq_banner_desc: "Notre équipe juridique est prête à répondre à vos interrogations.",
+                contact_subtitle: "Contact & Rendez-vous",
+                contact_title: "Nous sommes à votre écoute pour vous conseiller",
+                contact_desc: "Contactez-nous dès aujourd'hui pour planifier une consultation ou poser vos questions.",
+                ci_title: "Informations de contact",
+                ci_desc: "C'est un plaisir de vous accueillir dans notre bureau à Sfax ou via nos canaux.",
+                ci_addr_h: "Adresse principale",
+                ci_addr_v: "Immeuble El Intilaka, Bloc B2, 5ème étage, App 4, 3000 Sfax, Tunisie",
+                ci_tel_h: "Téléphone Fixe",
+                ci_mob_h: "Mobile / WhatsApp",
+                ci_fax_h: "Fax",
+                wh_title: "Horaires d'ouverture",
+                wh_days: "Lundi - Vendredi:",
+                wh_sat: "Samedi:",
+                wh_sun: "Dimanche:",
+                wh_closed: "Fermé",
+                form_title: "Prendre rendez-vous ou nous écrire",
+                form_desc: "Remplissez le formulaire et nous vous contacterons dans les plus brefs délais.",
+                form_name_ph: "Nom complet",
+                form_phone_ph: "Numéro de téléphone",
+                form_email_ph: "E-mail (optionnel)",
+                form_opt_default: "Sélectionnez un domaine",
+                form_opt_1: "Droit des affaires & sociétés",
+                form_opt_2: "Droit de la famille / Statut personnel",
+                form_opt_3: "Droit civil & immobilier",
+                form_opt_4: "Droit pénal",
+                form_opt_5: "Droit du travail",
+                form_opt_6: "Autre / Consultation générale",
+                form_msg_ph: "Détails de votre consultation ou demande...",
+                form_submit: "Envoyer la demande",
+                footer_desc: "Cabinet d'avocat agréé à Sfax, offrant des services juridiques haut de gamme caractérisés par l'intégrité, le professionnalisme et une confidentialité absolue.",
+                footer_quick_links: "Liens rapides",
+                footer_expertise: "Expertises",
+                footer_contact_info: "Coordonnées",
+                footer_copyright: "&copy; 2026 Maître Sahbi EtTRIKI - Avocat à Sfax. Tous droits réservés.",
+                footer_disclaimer: "Design professionnel conforme à la déontologie du barreau tunisien"
+            },
+            en: {
+                top_address: "El Intilaka Bldg, Block B2, Sfax",
+                top_hours: "Mon - Fri: 08:00 - 18:00",
+                lawyer_name: "Maître Sahbi EtTRIKI",
+                lawyer_title: "Attorney at the Court of Appeal",
+                nav_home: "Home",
+                nav_about: "About Us",
+                nav_expertise: "Expertise",
+                nav_services: "Services",
+                nav_career: "Career",
+                nav_articles: "Articles",
+                nav_faq: "FAQ",
+                nav_contact: "Contact",
+                cta_call: "Call Now",
+                cta_appoint: "Book Appointment",
+                hero_badge: "Licensed Law Firm in Sfax - Tunisia",
+                hero_title: "Premier Legal Expertise & Rigorous Defense of Your Rights in <span>Sfax</span>",
+                hero_desc: "Maître Sahbi EtTRIKI, Attorney at the Court of Appeal in Sfax, provides advanced legal advice and professional representation for corporations and individuals before Tunisian courts.",
+                hero_btn_appoint: "Book Legal Consultation",
+                hero_btn_explore: "Explore Services",
+                hero_card_title: "ID Card",
+                card_name_lbl: "Name:",
+                card_statut_lbl: "Status:",
+                card_addr_lbl: "Address:",
+                card_tel_lbl: "Phone / Fax:",
+                stat_1: "Years of Experience",
+                stat_2: "Successful Cases",
+                stat_3: "Commitment & Trust",
+                stat_4: "Main Office",
+                about_subtitle: "About Us",
+                about_title: "Maître Sahbi EtTRIKI - Your Legal Guarantee in Tunisia",
+                about_desc_1: "With a distinguished career within the Tunisian judiciary, Maître Sahbi EtTRIKI dedicates his expertise as an Appeal Court Attorney to provide accurate legal counsel and effective judicial representation.",
+                about_desc_2: "We believe that every case requires a tailored strategy and utmost attention to legal detail, adhering strictly to professional ethics and confidentiality.",
+                about_badge_title: "Professionalism & Trust",
+                about_badge_desc: "Dedicated to safeguarding client interests with complete integrity.",
+                feat_1_title: "Tailored Advice",
+                feat_1_desc: "Precise analysis of your legal standing.",
+                feat_2_title: "Prompt Response",
+                feat_2_desc: "Immediate follow-up on urgent matters.",
+                exp_subtitle: "Areas of Expertise",
+                exp_title: "Vast Experience Across Tunisian Law Branches",
+                exp_desc: "We offer comprehensive advisory and litigation services covering multiple legal fields to protect your rights.",
+                exp_1_title: "Corporate & Business Law",
+                exp_1_desc: "Company formation, commercial contract drafting, and dispute resolution between enterprises.",
+                exp_2_title: "Family Law & Personal Status",
+                exp_2_desc: "Divorce proceedings, alimony, child custody, inheritance, and family mediation.",
+                exp_3_title: "Civil & Real Estate Law",
+                exp_3_desc: "Property disputes, ownership rights, lease contracts, civil litigation, and debt collection.",
+                exp_4_title: "Criminal & Penal Law",
+                exp_4_desc: "Defense before penal courts in misdemeanor and felony cases, and investigative support.",
+                exp_5_title: "Labor & Employment Law",
+                exp_5_desc: "Employment disputes, wrongful termination, workplace accidents, and labor relations.",
+                exp_6_title: "Legal Drafting & Arbitration",
+                exp_6_desc: "Review and drafting of complex contracts, preventive counseling, and amicable dispute mediation.",
+                learn_more: "Learn More",
+                serv_subtitle: "Legal Services",
+                serv_title: "Comprehensive Legal Solutions for All",
+                serv_desc: "We accompany you step-by-step through all procedural stages to ensure optimal outcomes.",
+                serv_1_title: "Regular & Preventive Legal Consulting",
+                serv_1_desc: "Immediate advisory services to anticipate legal risks for businesses and individuals.",
+                serv_2_title: "Court Representation & Litigation",
+                serv_2_desc: "Exclusive pleading and defense before courts of first instance and courts of appeal.",
+                serv_3_title: "Contract & Agreement Drafting",
+                serv_3_desc: "Rigorous preparation of commercial contracts, deeds, leases, and partnership agreements.",
+                serv_4_title: "Debt Collection & Dispute Settlement",
+                serv_4_desc: "Proactive procedures to recover financial receivables amicably or judicially.",
+                career_subtitle: "Professional Career",
+                career_title: "Key Milestones in Legal Excellence",
+                career_desc: "Rich professional experiences and solid academic training dedicated to justice.",
+                car_1_year: "Accreditation",
+                car_1_title: "Attorney at the Court of Appeal",
+                car_1_desc: "Practicing law and representing clients before Tunisian Appeal Courts.",
+                car_2_year: "Establishment",
+                car_2_title: "Opening of Main Office in Sfax",
+                car_2_desc: "Establishing the office at El Intilaka Building in Sfax, a trusted destination for advice.",
+                car_3_year: "Education",
+                car_3_title: "Degrees & Academic Background",
+                car_3_desc: "Obtaining degrees in Tunisian law and advanced training in judicial practice.",
+                art_subtitle: "Legal Updates",
+                art_title: "Recent Legal Articles & Analyses",
+                art_desc: "Read our latest articles on legislative developments in Tunisian law.",
+                art_1_date: "March 12, 2026",
+                art_1_tag: "Corporate Law",
+                art_1_title: "Latest Developments in Tunisian Corporate Law & Management Protection",
+                art_1_desc: "Analysis of recent legislative amendments and their impact on corporate governance.",
+                read_more: "Read Article",
+                art_2_date: "Feb 28, 2026",
+                art_2_tag: "Personal Status",
+                art_2_title: "Modern Legal Procedures in Divorce and Alimony Cases",
+                art_2_desc: "Comprehensive overview of family court proceedings and rights protection mechanisms.",
+                art_3_date: "Feb 10, 2026",
+                art_3_tag: "Real Estate Law",
+                art_3_title: "Securing Real Estate Transactions & Avoiding Disputes in Tunisia",
+                art_3_desc: "Essential legal tips when buying or selling property and verifying title deeds.",
+                faq_subtitle: "FAQ",
+                faq_title: "Frequently Asked Questions",
+                faq_desc: "Everything you need to know about lawyer consultations and filing cases in Tunisia.",
+                faq_q1: "How can I book a legal consultation with Maître Sahbi EtTRIKI?",
+                faq_a1: "You can book easily by calling our office directly at 74 296 008, via WhatsApp at 58 696 086, or by filling out the form below.",
+                faq_q2: "What documents are required for the first visit?",
+                faq_a2: "Please bring your national ID card and all relevant documents (contracts, court summons, correspondence, invoices) for thorough review.",
+                faq_q3: "Where is the office located in Sfax?",
+                faq_a3: "El Intilaka Building, Block B2, 5th Floor, Apartment 4, 3000 Sfax, Tunisia.",
+                faq_q4: "Are my consultations and files strictly confidential?",
+                faq_a4: "Yes, professional secrecy is sacred and guaranteed by law and professional ethics.",
+                faq_banner_title: "Have an Urgent Legal Inquiry?",
+                faq_banner_desc: "Our legal team is ready to answer your questions and assist you immediately.",
+                contact_subtitle: "Contact & Appointment",
+                contact_title: "We Are Here to Provide Legal Counsel & Support",
+                contact_desc: "Contact us today to schedule a consultation or ask your legal questions.",
+                ci_title: "Contact Information",
+                ci_desc: "We are pleased to welcome you to our Sfax office or via our official channels.",
+                ci_addr_h: "Main Address",
+                ci_addr_v: "El Intilaka Bldg, Block B2, 5th Floor, App 4, 3000 Sfax, Tunisia",
+                ci_tel_h: "Landline Phone",
+                ci_mob_h: "Mobile / WhatsApp",
+                ci_fax_h: "Fax",
+                wh_title: "Office Working Hours",
+                wh_days: "Monday - Friday:",
+                wh_sat: "Saturday:",
+                wh_sun: "Sunday:",
+                wh_closed: "Closed",
+                form_title: "Book a Consultation or Send a Message",
+                form_desc: "Fill out the form below and our team will contact you promptly to confirm.",
+                form_name_ph: "Full Name",
+                form_phone_ph: "Phone Number",
+                form_email_ph: "Email Address (optional)",
+                form_opt_default: "Select consultation area",
+                form_opt_1: "Corporate & Business Law",
+                form_opt_2: "Family Law / Personal Status",
+                form_opt_3: "Civil & Real Estate Law",
+                form_opt_4: "Criminal & Penal Law",
+                form_opt_5: "Labor Law",
+                form_opt_6: "General / Other Consultation",
+                form_msg_ph: "Consultation details or inquiry...",
+                form_submit: "Submit Request & Book",
+                footer_desc: "Licensed law firm in Sfax, offering high-level legal services characterized by integrity, professionalism, and absolute confidentiality to protect client interests.",
+                footer_quick_links: "Quick Links",
+                footer_expertise: "Expertise",
+                footer_contact_info: "Contact Info",
+                footer_copyright: "&copy; 2026 Maître Sahbi EtTRIKI - Attorney at Law, Sfax. All rights reserved.",
+                footer_disclaimer: "Professional design compliant with the ethics of the Tunisian Bar"
+            }
+        };
+
+        // Language Switcher Function
+        function setLanguage(lang) {
+            document.body.setAttribute('data-lang', lang);
+            document.body.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            
+            // Update active state on buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if(btn.textContent.toLowerCase() === lang) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Translate standard text elements with data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Translate placeholders with data-placeholder
+            document.querySelectorAll('[data-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-placeholder');
+                if (translations[lang] && translations[lang][key]) {
+                    el.setAttribute('placeholder', translations[lang][key]);
+                }
+            });
+        }
+
+        // Toggle Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileOverlay');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        // FAQ Accordion Toggle
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            const allItems = document.querySelectorAll('.faq-item');
+            
+            allItems.forEach(i => {
+                if(i !== item) {
+                    i.classList.remove('active');
+                }
+            });
+            
+            item.classList.toggle('active');
+        }
+
+        // Form Submit Simulation
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const lang = document.body.getAttribute('data-lang');
+            let msg = "تم إرسال طلبكم بنجاح. سيتم الاتصال بكم في أقرب وقت لتأكيد الموعد.";
+            if(lang === 'fr') msg = "Votre demande a été envoyée avec succès. Nous vous contacterons rapidement pour confirmer le rendez-vous.";
+            if(lang === 'en') msg = "Your request has been successfully sent. We will contact you shortly to confirm the appointment.";
+            
+            alert(msg);
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

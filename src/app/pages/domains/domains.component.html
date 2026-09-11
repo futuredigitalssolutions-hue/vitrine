@@ -1,0 +1,15 @@
+<div class="domains-page">
+  <div class="container">
+    <h1>Choisissez votre domaine</h1>
+    <p class="subtitle">Sélectionnez le domaine professionnel qui vous intéresse</p>
+    
+    <div class="domains-grid">
+      <div class="domain-card" *ngFor="let domain of domains" (click)="navigateToDomain(domain.id)">
+        <div class="domain-icon">{{domain.icon}}</div>
+        <h3>{{domain.name}}</h3>
+        <p>{{domain.description}}</p>
+        <span class="domain-count">{{domain.count}} professionnels</span>
+      </div>
+    </div>
+  </div>
+</div>
