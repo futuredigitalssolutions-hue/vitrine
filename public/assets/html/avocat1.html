@@ -186,8 +186,36 @@
             position: relative;
         }
 
-        .nav-links a:hover, .nav-links a.active {
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        html[dir="rtl"] .nav-links a::after {
+            left: auto;
+            right: 0;
+        }
+
+        .nav-links a:hover {
             color: var(--accent);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a.active::after {
+            width: 100%;
         }
 
         .header-actions {
@@ -1100,37 +1128,9 @@
             color: #94a3b8;
         }
 
-        /* FLOATING PORTAL BUTTON */
-        .portal-float-btn {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            background: var(--accent);
-            color: var(--primary-dark);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            box-shadow: var(--shadow-lg);
-            cursor: pointer;
-            z-index: 999;
-            transition: var(--transition);
-            border: 2px solid #fff;
-        }
+       
 
-        html[dir="ltr"] .portal-float-btn {
-            left: auto;
-            right: 30px;
-        }
-
-        .portal-float-btn:hover {
-            transform: scale(1.1);
-            background: var(--primary-dark);
-            color: var(--accent);
-        }
+       
 
         /* TOAST NOTIFICATION */
         .toast {
@@ -1319,13 +1319,13 @@
 
             <nav class="main-nav" id="mainNav">
                 <ul class="nav-links">
-                    <li><a href="#home" class="active" data-i18n="nav_home">الرئيسية</a></li>
-                    <li><a href="#about" data-i18n="nav_about">عن المحامية</a></li>
-                    <li><a href="#expertise" data-i18n="nav_expertise">الاختصاصات</a></li>
-                    <li><a href="#services" data-i18n="nav_services">الخدمات القانونية</a></li>
-                    <li><a href="#articles" data-i18n="nav_articles">المقالات القانونية</a></li>
-                    <li><a href="#faq" data-i18n="nav_faq">الأسئلة الشائعة</a></li>
-                    <li><a href="#contact" data-i18n="nav_contact">اتصل بنا</a></li>
+                    <li><a class="nav-scroll-link active" data-scroll-to="home" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a class="nav-scroll-link" data-scroll-to="about" data-i18n="nav_about">عن المحامية</a></li>
+                    <li><a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="nav_expertise">الاختصاصات</a></li>
+                    <li><a class="nav-scroll-link" data-scroll-to="services" data-i18n="nav_services">الخدمات القانونية</a></li>
+                    <li><a class="nav-scroll-link" data-scroll-to="articles" data-i18n="nav_articles">المقالات القانونية</a></li>
+                    <li><a class="nav-scroll-link" data-scroll-to="faq" data-i18n="nav_faq">الأسئلة الشائعة</a></li>
+                    <li><a class="nav-scroll-link" data-scroll-to="contact" data-i18n="nav_contact">اتصل بنا</a></li>
                 </ul>
             </nav>
 
@@ -1380,8 +1380,8 @@
                 </div>
 
                 <div class="hero-btns">
-                    <a href="#booking" class="btn btn-gold" data-i18n="hero_btn_book">احجز موعداً</a>
-                    <a href="#contact" class="btn btn-outline" style="color: #fff; border-color: #fff;" data-i18n="hero_btn_req">اطلب استشارة</a>
+                    <a class="nav-scroll-link btn btn-gold" data-scroll-to="booking" data-i18n="hero_btn_book">احجز موعداً</a>
+                    <a class="nav-scroll-link btn btn-outline" style="color: #fff; border-color: #fff;" data-scroll-to="contact" data-i18n="hero_btn_req">اطلب استشارة</a>
                 </div>
             </div>
 
@@ -1890,11 +1890,11 @@
                 <div class="footer-col">
                     <h4 data-i18n="nav_expertise">الاختصاصات</h4>
                     <ul class="footer-links">
-                        <li><a href="#expertise" data-i18n="exp_civil">القانون المدني</a></li>
-                        <li><a href="#expertise" data-i18n="exp_commercial">قانون الشركات</a></li>
-                        <li><a href="#expertise" data-i18n="exp_realestate">القانون العقاري</a></li>
-                        <li><a href="#expertise" data-i18n="exp_family">قانون الأسرة</a></li>
-                        <li><a href="#expertise" data-i18n="exp_labor">قانون الشغل</a></li>
+                        <li><a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_civil">القانون المدني</a></li>
+                        <li><a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_commercial">قانون الشركات</a></li>
+                        <li><a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_realestate">القانون العقاري</a></li>
+                        <li><a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_family">قانون الأسرة</a></li>
+                        <li><a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_labor">قانون الشغل</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1921,10 +1921,7 @@
         </div>
     </footer>
 
-    <!-- FLOATING CLIENT PORTAL BUTTON -->
-    <div class="portal-float-btn" onclick="openClientPortalModal()" title="بوابة العميل / Client Portal">
-        <i class="fa-solid fa-user-lock"></i>
-    </div>
+   
 
     <!-- CLIENT PORTAL MODAL -->
     <div class="modal-overlay" id="clientPortalModal">
