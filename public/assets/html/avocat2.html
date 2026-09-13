@@ -234,11 +234,39 @@
             font-weight: 500;
             font-size: 0.95rem;
             transition: var(--transition);
-            position:ించింది;
+            position: relative;
         }
 
-        .nav-links a:hover, .nav-links a.active {
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        html[dir="rtl"] .nav-links a::after {
+            left: auto;
+            right: 0;
+        }
+
+        .nav-links a:hover {
             color: var(--secondary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--secondary);
+        }
+
+        .nav-links a.active::after {
+            width: 100%;
         }
 
         .nav-cta {
@@ -1485,8 +1513,8 @@
                     <h1 class="hero-title" data-i18n="hero_title">خبرة قانونية عريقة ودفاع صارمة عن حقوقك في <span>صفاقس</span></h1>
                     <p class="hero-desc" data-i18n="hero_desc">الأستاذ الصحبي الطريقي، محامي لدى الاستئناف بصفاقس، يقدم استشارات قانونية متقدمة وتمثيل قانوني محترف للمؤسسات والأفراد أمام مختلف المحاكم التونسية بموثوقية عالية.</p>
                     <div class="hero-btns">
-                        <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-calendar-check"></i> <span data-i18n="hero_btn_appoint">حجز استشارة قانونية</span></a>
-                        <a href="#expertise" class="btn btn-outline" style="border-color: #fff; color: #fff;"><span data-i18n="hero_btn_explore">استكشف خدماتنا</span> <i class="fa-solid fa-arrow-left" id="hero-arrow"></i></a>
+                        <a class="nav-scroll-link btn btn-secondary" data-scroll-to="contact"><i class="fa-solid fa-calendar-check"></i> <span data-i18n="hero_btn_appoint">حجز استشارة قانونية</span></a>
+                        <a class="nav-scroll-link btn btn-outline" style="border-color: #fff; color: #fff;" data-scroll-to="expertise"><span data-i18n="hero_btn_explore">استكشف خدماتنا</span> <i class="fa-solid fa-arrow-left" id="hero-arrow"></i></a>
                     </div>
                 </div>
                 <div class="hero-card">
@@ -1589,25 +1617,25 @@
                     <div class="expertise-icon"><i class="fa-solid fa-building-columns"></i></div>
                     <h3 data-i18n="exp_1_title">قانون الأعمال والشركات</h3>
                     <p data-i18n="exp_1_desc">تأسيس الشركات، صياغة العقود التجارية، وتسوية النزاعات التجارية بين المؤسسات والمزودين.</p>
-                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-1"></i></a>
+                    <a class="nav-scroll-link expertise-link" data-scroll-to="contact"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-1"></i></a>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
                     <h3 data-i18n="exp_2_title">قانون الأحوال الشخصية والعائلية</h3>
                     <p data-i18n="exp_2_desc">قضايا الطلاق، النفقة، الحضانة، الميراث، وتسوية النزاعات العائلية بكل سرية ودقة.</p>
-                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-2"></i></a>
+                    <a class="nav-scroll-link expertise-link" data-scroll-to="contact"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-2"></i></a>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-icon"><i class="fa-solid fa-gavel"></i></div>
                     <h3 data-i18n="exp_3_title">القانون المدني والعقاري</h3>
                     <p data-i18n="exp_3_desc">منازعات العقارات، الملكية، عقود الكراء، القضايا المدنية، وتحصيل الديون.</p>
-                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-3"></i></a>
+                    <a class="nav-scroll-link expertise-link" data-scroll-to="contact"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-3"></i></a>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-icon"><i class="fa-solid fa-handcuffs"></i></div>
                     <h3 data-i18n="exp_4_title">القانون الجنائي والجزائي</h3>
                     <p data-i18n="exp_4_desc">الدفاع أمام مختلف المحاكم الجزائية في القضايا الجنحية والجنائية ومواكبة الأبحاث التحقيقية.</p>
-                    <a href="#contact" class="expertise-link"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-4"></i></a>
+                    <a class="nav-scroll-link expertise-link" data-scroll-to="contact"><span data-i18n="learn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-left" id="exp-arrow-4"></i></a>
                 </div>
                 <div class="expertise-card">
                     <div class="expertise-icon"><i class="fa-solid fa-briefcase"></i></div>
@@ -1930,22 +1958,22 @@
                 <div class="footer-col">
                     <h4 data-i18n="footer_quick_links">روابط سريعة</h4>
                     <div class="footer-links">
-                        <a href="#accueil" data-i18n="nav_home">الرئيسية</a>
-                        <a href="#apropos" data-i18n="nav_about">من نحن</a>
-                        <a href="#expertise" data-i18n="nav_expertise">مجالات الاختصاص</a>
-                        <a href="#services" data-i18n="nav_services">الخدمات</a>
-                        <a href="#parcours" data-i18n="nav_career">المسار المهني</a>
-                        <a href="#contact" data-i18n="nav_contact">اتصل بنا</a>
+                        <a class="nav-scroll-link" data-scroll-to="accueil" data-i18n="nav_home">الرئيسية</a>
+                        <a class="nav-scroll-link" data-scroll-to="apropos" data-i18n="nav_about">من نحن</a>
+                        <a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="nav_expertise">مجالات الاختصاص</a>
+                        <a class="nav-scroll-link" data-scroll-to="services" data-i18n="nav_services">الخدمات</a>
+                        <a class="nav-scroll-link" data-scroll-to="parcours" data-i18n="nav_career">المسار المهني</a>
+                        <a class="nav-scroll-link" data-scroll-to="contact" data-i18n="nav_contact">اتصل بنا</a>
                     </div>
                 </div>
                 <div class="footer-col">
                     <h4 data-i18n="footer_expertise">الاختصاصات</h4>
                     <div class="footer-links">
-                        <a href="#expertise" data-i18n="exp_1_title">قانون الأعمال والشركات</a>
-                        <a href="#expertise" data-i18n="exp_2_title">الأحوال الشخصية والعائلية</a>
-                        <a href="#expertise" data-i18n="exp_3_title">القانون المدني والعقاري</a>
-                        <a href="#expertise" data-i18n="exp_4_title">القانون الجنائي والجزائي</a>
-                        <a href="#expertise" data-i18n="exp_5_title">قانون الشغل</a>
+                        <a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_1_title">قانون الأعمال والشركات</a>
+                        <a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_2_title">الأحوال الشخصية والعائلية</a>
+                        <a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_3_title">القانون المدني والعقاري</a>
+                        <a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_4_title">القانون الجنائي والجزائي</a>
+                        <a class="nav-scroll-link" data-scroll-to="expertise" data-i18n="exp_5_title">قانون الشغل</a>
                     </div>
                 </div>
                 <div class="footer-col">
